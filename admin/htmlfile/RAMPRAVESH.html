@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<!-- saved from url=(0036)https://sso.rajasthan.gov.in/profile -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Rajasthan Single Sign On (3)</title>
+    
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./RAMPRAVESH_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/bootstrap-dialog.min.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/font-awesome.min.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/header-blue.css" rel="stylesheet">
+    
+    <link href="./RAMPRAVESH_files/menu.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/style.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/material-kit.css" rel="stylesheet">
+    
+    <script type="text/javascript" src="./RAMPRAVESH_files/jquery-1.11.0.min.js.download"></script>
+    <script>window.jQuery || document.write('<script src="https://code.jquery.com/jquery-1.11.0.min.js"><\/script>')</script>
+    <script type="text/javascript">$(window).load(function () { $('.pageloader').fadeOut(); });</script>
+
+    <script type="text/javascript" src="./RAMPRAVESH_files/bootstrap.min.js.download"></script>
+    <script type="text/javascript" src="./RAMPRAVESH_files/bootstrap-dialog.min.js.download"></script>
+    
+    <script type="text/javascript" src="./RAMPRAVESH_files/common.min.js.download"></script>
+    <script type="text/javascript" src="./RAMPRAVESH_files/waitbox.min.js.download"></script>
+    <script type="text/javascript" src="./RAMPRAVESH_files/menu.js.download"></script>
+    <!-- Material Kit -->
+    <script type="text/javascript" src="./RAMPRAVESH_files/material.min.js.download"></script>
+    <script type="text/javascript" src="./RAMPRAVESH_files/material-kit.js.download"></script>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <style>
+        /*Tooltip*/
+        /*.tooltip > .tooltip-inner {
+            color: #000;
+            background: -webkit-linear-gradient(top, #CFCBC2, #FFFFFF) !important;
+            background: linear-gradient(top, #CFCBC2, #FFFFFF) !important;
+            border: 1px solid #AFA898;
+            -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+            box-shadow: 0 5px 10px rgba(0,0,0,.2);
+        }
+        /* Tooltip on bottom */
+        /*.tooltip.bottom > .tooltip-arrow {
+            border-bottom: 5px solid #AFA898;
+        }*/
+    </style>
+    <script>
+        $(document).ready(function () {
+            if (history.pushState) { window.history.pushState(null, null, document.URL); window.addEventListener('popstate', function () { history.pushState(null, null, document.URL); }); }
+        });
+    </script>
+    <style>
+        #column-left.active {
+            z-index: 111;
+        }
+
+        iframe:not([src]) {
+            display: none !important;
+        }
+
+        .rajmail_backdrop .modal-dialog {
+            max-height: 100%;
+        }
+    </style>
+    
+    <title>Update Profile</title>
+    <link href="./RAMPRAVESH_files/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="./RAMPRAVESH_files/font-awesome-animation.min.css" rel="stylesheet">
+    <style>
+        .btn.btn-loading {
+            pointer-events: none;
+            background: #fff url(images/loading-small.gif) no-repeat center center;
+            background-size: 25px 25px;
+        }
+
+        .modal-footer input.btn {
+            line-height: inherit;
+            padding: 0 10px !important;
+        }
+
+        .alert-danger {
+            color: #a94442 !important;
+            background-color: #f2dede !important;
+            border-color: #ebccd1 !important;
+            padding-left: 10px;
+        }
+
+        .bootstrap-dialog-message ol {
+            padding-left: 15px;
+        }
+    </style>
+
+</head>
+<body oncontextmenu="return false" ondragstart="return false">
+    <div class="pageloader" style="display: none;"></div>
+    <form method="post" action="https://sso.rajasthan.gov.in/profile" onsubmit="javascript:return WebForm_OnSubmit();" id="mainform">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATEFIELDCOUNT" id="__VIEWSTATEFIELDCOUNT" value="11">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Wm6MnL/sRQTTkcTWNP03zAfhB4sTgZptcWnFbNJlWPT3yeE1u2kkH9EmpfYEClm4VvI4iEhXfulnXcLV18eiBj7m5aBP3jYT5bP/ovsVgaZrLx7FUgSVuiNQokgY1wiSaAJo1AcWs08zR6JIFZoM+6CPc2GR2obDBbGP7mi4ascYksYpPGWI1xtLLogOnex4oFjFh80ukqzztjJsepdHMISovTlfkPSRCjXyIsjxNQNADfPhA0xPV0Lh8xpFOiL82Asn29ZI3AjFeYz830CjOppArLeZbMr8ZQicTO1KNeA60PVXzOGR7HJ0rbyBR8iwhBuiWE0X0YjczHvsCCdUMHAcG+cyvY6eIkyUVZxBgtMp68PBnIwivNX5CjsnC+SwEruOKZFxjtg/y7DpoARxRRTarCtP78OSFjFpiMoc7yhP59j19l19qIi11mFIj1ZoOCNjYJFLWQ2dHuUHT8tm8DuItbLQqEeubF2FdUMStf+XxITARoVHzuTPFwOHcggYuZ8VAUpVCACTnUftILKPzNk469LFs9maP4qsgd+MMlgcGZvYWemOWRkH0wt7Oa3RPV+r0t/3MEOIbBawnieWFrPTDlNRB7vWsXgBP0FdQAfMdpGd8GImELd/rgDgbrsoj9tLNV/VTVgs93Nw2TxTfUrBq6Jgcfd85qspn3VSOB1SgV90Hv1oHUb4MRoTLaECq/+O2IFE9/srbOZ/7MpNGK6s7IhrtzWeJIvvbc7wUxcDtQx8vEEZobzzqN9ggt3lI+OFiGhnTQO6QpY7FCx00KZUkc9aZOnwHzWDockBfttMRcfmAT8n1TA8TeMddBX4Bz7NdjERGMwvPZokdiYfVYiv18nwD0lqc6XsKNqUBpX5fAKNXf0nUIoiL2JL53VhsXp+V0wiJW/BNU1Z7CUDvGCE18lYylJsp6M9WgW2w598rAcbWmyIbWLY7b1GiHcQX3eJwSWbOUNPt7hlsNMhINEjv+PTFxqtxRJnA23BvcoEfpVBsrWnlZAU7qJ9REA6">
+<input type="hidden" name="__VIEWSTATE1" id="__VIEWSTATE1" value="IpYLMWbImi4njI90NfI/xRtNJhr+IxH2EIN9jLijWPaJJ+t8eYa/FU0HYu3mKWUeIlfqUCLWSxfJTOhAVQ1OEpk4nMpsRsD+keZeyyH7g8Uf5CglDgukRHipre9ymXEFqWVDA07ndy/0b1Tz39RKq1bJfkWdGvcGeprhnHycj6wKYUNwTmKgSrWfT5Kc6KSfAhnszNRu5lLvnIjYP49k2UEry71kcL4lMwyySl+Uitn+8mbyYXM427/r+DtWqgeX6oF4Hp6SO2VDSoTIL1t31twRYUQrf0Qy4wqNGltTd7vNYMzaqrkJ3f68a+QymgL7G30TPBKP/KHRdIeFJQ1j5tRhYtTrUQHGQflEckdoR+PGv8FNK5oiKA3U6PKoS6GrEG/tC9w+WPv6wi+JiXflPAOF7lQzjRDnS3rNP9XREtVEOmaMFAnUnyojW7Vn5RzKRwhpB+Hw+GV3ZuXCHXm4JWHAcXjoU1QZYnMXfWrPCiHsiv/j1jJQlJx8+YodXtpmYTYPLNG8Z99T/Q8fOM2gMYrwTdQz1kracAtkFnmd03wBgYaoNF3xTizgPKAxAkaBXBFZeF1cLnjrxPoYk4Vfs+vRG+deSGAlCpstjmskFvk6IHGUQ2Ck3xwYPhtemUr3e+eqmJTDPIbyOZmupb2TEqBwEXjlPHTIJlqIkGh2O/9phHjOF0axSzCUHYXrg1aO84FqpLaX2IzhuzntohWfxMQ898YCukNpyx57PrAzAwCmoNlGtT+szQ/8n+ipbZ8BUYQaEn0H7OYMMbn30Veby2ckCRvKyeNkahlGpPR2cmrgss+5AFdDa8DxyBH4IkVV9XV46e2ot+sQqe8x3vCKXv/4ddFf4BdUHiyC1Oq2DUaeqFEWZz0oWc231QGloCoUcv82YP3/lV1UjQ9RtpdIKUwidlZZ/vuYS3kO7FnKx4ftzKpHm0v71XUsYRvJ0Hl7mlCkfNdCoxb3OgzYyvGX62yuTDVQ1QyQXwvTJidGoTL9Hke3JzgHSK5ZbfKJpnbn">
+<input type="hidden" name="__VIEWSTATE2" id="__VIEWSTATE2" value="p8Ev0UF1mNU7fPRVW3tJIXRRpVr3FYDspXbQo1PYQCJWZKjx+nLLu33X4uOY3x7I57Xm3tzr0RQH8vHKFzWF03hnjE1mryceonyHaynWwV38pc7SlrpGac34QWL0m4d55lsXdFWxdKS7RTJqF18LJ9jGDgJ5YtiDOnBogLqaPACts6qIViDYVtGUOZVW7T6GUfU2RcbLRLCLwOSPNUSsqDLOJF6iBByFpZDPhJJMItiUMDR0Iqlvm9P0vNALgbqykpWmCz097V62Pji9iZpCosXsVPL1N9XqxitBUrw7ok+sVXJJwOidcmXUY4oKwYHtZfvSomfHWWkqXhbh4dWnNwiCdMcuVL5y/c2jaVQCWwyCh7r5a8AGnX7GrT5WtWIXwXzJy51QIN23yaWww7Ni7dOh3y8tiQ7SWSBJzMBy53Aq3DoYB1LOgyb9P/oKECrmNvY/eqAArI2SBBwC79cfFtwgAvl23iZcDfOYC/Kf6SoQoXfBHvA6k/YLvViMCh3vNy4KuEsgG6szxgt/4Le715NlGVruUAwRAv2ZjEF27i1K0wa2lQIbTzWyATwjNV4eKt2oS4mt1dw1qX3RbvXXTaB12MDtyRqwLGI58jv+Cz+rjQdSw2WjKJLkSPT3RHZQ8R5wdkJHWtjgyrM2uFlwwcg9XsnyA/Z8O3acT1RkxVQ7NhaKrqwwus4cUQvoSirs67xOy7S4Qa7UqsSGziS+veD5u8ofksNjFn8hjLTbi57fXb69sx3kYeJPPOY0nbN2kBxsu8inEkuxXpFqNlq4CSeZn6n0pQ6d+Jrx62qR7IofCdvFMSViRFb4LRk+qky1T4SvPBAs1GPwZf8vKYQIqSxlPWX9eBkhdPNv2GoYkIfqRPOKdgdKDMGdoxCkTjD3018S2CmMaxAC7kBDzNpoFBM29VB1lvQZ3BVtaVlygtK4jmDIaNY4xAL5Nhl1nfCuaVg4fUWnwD1AuMXX5bbLuFdK5DlpSMyn/rJTefjo70RfxiCLis4WC8tU/jgXxece">
+<input type="hidden" name="__VIEWSTATE3" id="__VIEWSTATE3" value="LvuqQr/62AnuEDF3vciRjgmWmHvJAkgGcLMs3LDDNEGJ5INA187Yp+BRYn7gNokuc+giSGMWWvlmUevJivJEAre1TCHxFWZNmeDzfGbB7MwERaKM9sv0ceGfUdlaQj55OnqtSrOUVLiZMKlnx3pcwy3c/MYZDMNDz5IoU2cJbI69KNg5f5kc5Ib4PHPX/NdDZTHRLCAV8irJDXLb2D4fezI7vbc6u8FiSLYFQxBtaxQBiTPpWN4jZ1cYZlt+k6M/rt7UzlgofCXhgAgtpLyfaihVeY5PEE+qCW+r32v/uIV1crErGvoLb4+QhNZ5tQ1zm12UzhqUDnax5oL85Vorja7soDedihX93ODHzufnRfUi704XOeBNi+9CgO+2fCiDOjtReo/UsZ/aTR8ymKFe1KPSr6H/LISUVUl2PaghyySjuLhe8Fk1QALjAT06lScl3buXSIPtODmkV+NcqSxilAfxUFxTfJzhA7lUwUf+TNZ9o5tc3u4nzGlNlvRWq8GdbI3sfEfQ+6mkCqmYuO60Id3wGzmDp5sxRFCKjdnWoNE4I9m4VNsiXPQBhnZB+pefb0k0cc3G/mOogJS4WKWdDJuC2wDfG1SaNlYFxvXc9sWCA3I7a10jAtUtFmCxw4upaUX/AcVptw46iyDlED6hIyIKZSISfBBNtT08+UI420CI7G94evE+QR8fY4P5m9jxWi9prLwam4iDXbhQtXz/RuvJAv5bxesOuHACJBJ42hBjEVIqFzvagTDytqnnctQaojKa5AYFRuw+euhPwL2ApVqGPMGKZP3h7v8acrcmy+oIIVM6wQYqW9PE0ogJT7YN3pdAyWB7g7tntVxDew+V6JjjohyAodJt/fp2z1uMEvORzjqsrGAq4SDDgyUVdPtPsap1PSIRvQrxQX2I47NuZT/OUPWomYxKm2aGaCOHsPhJyaGjHTrGNleMU7ukBKK3LE13tukk12+uHrwqAbA660MABIOLNGDt18qLQGw8+uO8bJPiL03jE4qDJsPEifGF">
+<input type="hidden" name="__VIEWSTATE4" id="__VIEWSTATE4" value="VUXrbLZCmBVf5jp4tA0jpL/hetjQ+E2EGzCzFS0Pef5X/K24CgZVrauualDgLYJlX99Rdij1402dgw2JRzqJQmoV5b35stm9OjMMn4qK7WMr3ISvOpStfaNSqrEAYmp5Cqb201lmMJvDpyCrkzij+IUGsldHkPys3/uCrc67Qw7gax90OiJ/GMuiC0rinFs1Gqs/JYDnHuFvnP/qlfpGwYiO1pyENKAM+Cyd9/PIioZ1jm2Dt4A55N1PtMnkFUoxTDFwFKPC+6iz9nrf9lhkV/NvhB1aCX3sIuKCZRSf+R8FwkhIuEpxTepUOJBzlgTGaBbIoVKQJeWCPUNt5g2zBARLuRnvufdaUmc7N8gRyVU/fyRiK9fVasdG2azboOJX2g8APS/euqnh9oAtX7GsFCaZpt2kQ3ZmFMLehjKo6zo4lk58Mu2C3fJVSuoi/MfwJ8DeQSq8q0kezy7eV3lFqJgbJXsZVtqigyC5MXo/LfxcwNCe2wmqGnVQBQyGHjPv66cmx5lIM+dACMgsYCRDtHSLUH4tMdZJfpIewRcmns+MeiRfo5LRd9mF5MtEpC/31nkgpG+QZ59mioypKYWArugJ+ASP+Zxzx444nJaL89RK17Q3nQ78LJPS4t8zGO/PiVlHW5ymtJg0ho55igRG7COy2J9H1YkpAGvp4xwkOcJAoIlzaSJ04dV+pcbBlj0klMi2FJm+TNbH++GdaWkb9fFDt+TOqYYCHMNwDL/5dCpfy6xDLHGRyjEFK/ufgLShoEasF75ZFS5qK7fTwxEY5myCaRz3iHhA746MtVLXV/Fy2O37YWDCRNun/K99dzmNJsMh0TS5E5fjJTxUBPD2Sck2olj9N0+5/Nc3RN8CHcOeh60r5rRaLomvKZjWPZ81nQcTnK90ydZ1ieb1uHDx61wWFwYY9aFZGpWsAdnzIzyV2yDqX6a029hvAmzUMu/g4MbjBwSgliWkBdRKJNsA0nHY7goapmflMzVLmZ1wcVTrNn2TxZq6rYk/pq7w18A+">
+<input type="hidden" name="__VIEWSTATE5" id="__VIEWSTATE5" value="kzDf56DxvgcV+MC8gqEUJoDHCTgbGkJ34nPfoBRdwxywQUG8oBNA0spfcgzYWlQeK3rFP5qXhG7GneTprmau2lSKo+yVwEHdZH9lpWKQ1/QQrFLj784JnyGbvD861ONgnZDgTFqsWi5d4bmm1I1FVT7ddjw5/YVPkG/bcrl/McH2aaup9yuZEZXYH5km/SBCakFeUkbQeB0U95FQA74zrdUwtpTR3ph+saPAQN+a9gBjjSxECBdO2I++ZN8EINxK8bDuGSp9CCS7Glanp9HVj4+EDXNdmg3dw7/0xZ02PXERn6JKqZkbTmEC7c3yT0xvIb0QBbIA7wfqTTOQ1p+hnDmdatuN311GRzRuM9ubkjGr0Evk8+fCQ5tLg82/YnThzyuNEfs9mxyqYJ3O6XOqPFDg/R9itFtvLJwHxg4hU/eqQlnHMXB4aHkJV94ErohfV4zpS/0Sewx3yBFQ5wcL7tL0BVGZBPEzkezx1npdFnrZeZmZzz6IL1ZHmbY1SWYGKbL4ihltPwg8EFSlN74+WqIvvZKvnz+qPfHjWZOPUh+Nl7AgGWLjxyENxLI8F7QcS9MTWclIhBTc3CfQgDjsVd1GZ50QpYaBMThwYAgUG0Kn+TRHkvA1kjLFfyIvBM5B2tun0c+4dQiqnKJM9CDZ0TebnY95bPlDMkUIdBVGk43fEAO9fxVolBJnfiLmrLwgJEoCxKe1qJe2wlWZRRA5F3JLsxz0f74QGzslVByXT+pN1A8TKb1AglR6zb/sRY94Hlcu03c8TQkOELI24uKA+PZnvMBo1/liMKup2QvuW+00AbjDfoXf05UpN2iSEhxKRxIfgawh1qHOr/0gG0s/nTlysF778lycJ8RF6f+rHDB3NtgUquvI3skVplEAUhRroLZgM3Q9OKh7fRJ8CKo8P6HT3IRyg5U4QfkYsiD5mJAzz5/xCKj/gVRcKTO91gNmrldHsmmw9LMLxHGB9R+TRBn6zifILaH1owklQmQqge0ifAqyuEh8VEIiQKgPZIDS">
+<input type="hidden" name="__VIEWSTATE6" id="__VIEWSTATE6" value="60HWQvHs8jcPvPt8atqWkRgZSYYDqF4/l5GpHmdXXpfYhtqvW7ZuVDZGFKYz5jskCA8hhnu4dp8gsKlgXY9F67L4rmwylZOY++p6o2qWcp0FyrWX3Zfo5lOivdgkFhj1uK+e+LtL5N4t/ZAuLMUAAaiMu95XqAmeIEPgJ30yM1IYEhcdaPog28GchteqL859+NrgoTl1gtiAIf22F8ZUtbtcaw326vnJ2EF90OE6gKwB09zj0FQ68eFCinQa9Ug4goryAO/8cCHg9ruK84pKxQlxjODYv7WbslgUG8FTLKgq64gMEDXmhum7c01PrzlTsdJ6S1eB4aybHIz7KChOlF33RJvzSyn8gJ83Y6rdSuB8PkLpSyyM51tGEHh6dMOTyktTaNT+DJwxatJf35FQgmFLUCET4B3kZkOK9ILsstyMhjVUzXWkgIjVY2WhE2EVRlQ2JXh93vPH3QFUMeEPvdktLVMNRPzJd8PdjxGJTFSt2MvbijWb528AniQBH6kgjyp8xCT483vq1SK0GM1oNaeSvpZJhjpXl2hn1Q4pEtr1fikqp4Pm/fApXIqAq3JnQYWU2/hD0GBrT8e4WCoNAM7ogDhE5VPcyO0tsMlck+LHSzWjRo7PUEnWyS6yG4qvumge6nwDx/NaNGx+GeTWFALJe80EThY7iyC0S2pqCDZCXJsybDiJXQgpBck9foCYPcFIaGvDIii8uJxHzE6RO9hZ7UYLsBsclaLZHfceItzm2JdywTPaTPlm3PRceKYO8OZAYgif1IYfi+7M8BemqXnrbizCLOKC8iyjSONc9lTSv5c4Je4s8LrctyFCzV9oS97GlSTDVgKl5cWp8JEz8inpimyJMOLufnsnGIw6pYHIHaIp5R6bHAgxghb5m9atBHDmNvNRnbbwMaon0uJmIhQClBVUUyk+Fg2NWAKCapWByX7J6n7PO1cr1wgL6DEP1W4zEXA8miz/O1TrDXTgoj0/uahGyNdvnonKIUXBctn/bpjmh49tZJeRCPNNIV6Y">
+<input type="hidden" name="__VIEWSTATE7" id="__VIEWSTATE7" value="3X+EttSACkuIBAkekv0qxWLqP4Prj3RBxXVCLP3gwusA6oaZ5xARQgBCwky9yG+MeLhKhOJcsnebKRLJwD4DVZQUjhU+WSXejR6q5Au4W3QNigQaYcjMsuC0C790MWx6CoYhJrgIBHOY2sqO8z0duaumf0Ok5IxnHyscias18skbAu+Gcnt4dvIo52NBfPPOzIlORtdbC7/oXlEgyBQaokBNTzimUocw4CtprPJpCw8V1XKBkK2mfiWviLXzJcuPeSBszfTsW8eOtw6tiLWISaZ1s0GqYkJW7NX7wvC0sdfHOF9E1miRJlcnCNT+QPmB4aF3aswHtcK6mDMKPhiwr+yATnTo0IpNrwH9jD38LCuV0Ulqls+/WUQkcu78YaQpdKtwaNN0iOMwqOeFMSfvSLgfrlzij2hQbFsA3JsZlVFQNPB4fqENGXtesIRjt8p5c/yupoRePNG1DUQpX97+ujMHynHQ6hWJj0Kv/tRgwe76TLPEfHKSfXR/eUqRl/01S6qihJzFc5uEd9GGuyh/G8vzYlUbwgbH9zuUEnf6TFqP/dftnlZhTabCfdla46vz/JD9DcT++WrDyOlAXeA8NylyUQHANSaA3sqeEbdUKkuE2g39QRerOxHwo5LmBGGf0VVh4AE64P5HhqfkpQzxqodqaj/b49a3XvQzTot6pKOSgMiM5+TH5B4K135c3+oB98IzzpOtVWTFbOfOQJ+R2+vzQlrpw9RumIa0DYxlZ0QW64ZrnSBkhV63r8MSVBxe4ttSTHiodL+qGwjbR54uNRHLFL34e1julaCqMe9ZfZ6y2sUvwfHXSLTnbqwYOfgZjhvUpyM7QsYJDowGoUAvVHh6QsKz53Ies8UBgZ3oaAvlP3I7HwWmiQAAro2qZONXL7zlS+VUh1+d5y1PPCRRiGq4GQQ/H4EaN/SJfrXdPcpPLslC7lzsLX8+Wh9qcEEpazOtlf0qggOwPVAfMy+dDs5biQW2oqGz06zMDeERP5HBURYtbZQW7uo82V3lmNhr">
+<input type="hidden" name="__VIEWSTATE8" id="__VIEWSTATE8" value="vSJajz8wHjuZlMl8c8JN60OUrCZ+lNZDYaxWYLcXRjeVsMHYGCLi4/e/zg1TL46bEK5JlxVKxX42qXYDk3wDlImUPXoJ+uvYIQ8Yrr2ZBHTGRHfkfR24D9D3O1h+lkVrcsn9N2oy8cnDSfynekF1TSj1+iLZvV9nK76jSTR5vKo8Fo5hft3mfZ45ZwH/080LFG4nWN/JLlDHDNFoskTi+IUBOtaqc/PGrsTZTdtcDR/WM4OFAojE6xP9gcjkIlmwx5YpxXx4oR2nGuvEN86whn0r829yY5zPeAj6r2K2TkcRnTbpdm+91bCoTQJn+/dcQtx/pBglEa2PrDTddD8TSNZHyurL5nRik34hJdVIQCDdywjM6y3MVkiZWlPl3PlQ3s85Fnk/mOqcUvGraMiY0drGinqxhTtzdWVHRDa6ESxbuQwbJaMii/9mWETiRRoxdj6HIbE8StV6ACPbrTbcjlekSMMNWf0dmt44uOsa/ra30c//uRPytCqDAKlJoVKY30FkrQBhYsTLY7elvoENFTSvwuVPJfBlIpqS4uMiXuvIhiQt3LL48RiZpTBng6CQvnxCWUe39LvIhbzjOJiLtzGnFlTN/XhoEjJtn79PKzeP6z/kl3CSC+sNR2EnTuKprgS4ykaT4mQWj+Lv67SmK+iJZ1Fsy2o9AF680OJC4KQLxh6tH5h733+nSs2A8gSKvu2au37rCFfwoCBt+cAzPbQGW7YOm/GPpHjDgQtYcSiarxkimuenfK8j1wcczIKbsS3VXtV0ohqoEI9rwwwTu9ylcL7EA8Lh7Nj8tyLEvs153k1TqrYehT1oJm/gODMEDKqu2jX+08n0JxkHDdbOqg2FYcU/NUFR6N4mIPRaLF2E0TN0XlXZYpuV7gMl22QCuxaUReCK3UI5z+8XKqTC+o/UECcBO6dInzOEjixrCHRQKfmnOIbxV6OHc36WV2PzA1GtP5CYRBt0aC+Eiv6/8BCib+KIJEOXciK750ScSr1evWg3xSR2Gi3ne0beKvBN">
+<input type="hidden" name="__VIEWSTATE9" id="__VIEWSTATE9" value="CcVziM+i9z0/XLGCD1JHzR0BhJ4RbQPA2IZdKRouuI0qBOsEbWEfa56KaSg4rFq4orNvr7992H7MnG1KwwsN5JRjFDJ7OG50kxkpVv5imvd9SoFZ6d77AyHw1HpVjuYtlJdCCZHaxeK+5/R3jaWbkTSDciGLlZ4N2ebONVdqF1KTC+0PXpF1hWOCnyggGkOAIpxYQ/5sGxu7APgCPdtyBapwcDg250kbH57wjiU/SfvNvqM6r7I8SSbW72FDrWeQzqyocopIHyLWZAGVvndvGmdBXZCVY6UEuTy5qqD5nngYEoPGNBUf7VkPNdLQIuxl+gtm1Li8h7J4w5PtLbK77lfQ8IEiEIRmXjfkx1XzG2cM3RdfroPm0SuYiZ6m3lxl4Hi4lN6/cGfPr09Mfuo3RiL4FyRoIpkcw9arEs6cptt4ICCRdK9WEM0kpAwsiraq8wU/i4i05pF08kRas+e7KWx5y+4VBxCI47y6xX3cN6Hxxyx/1n3AwUob3hP5gs9qjoCFiP8g2Bpu/gYBuunQ3bxenwTlGTjDEW8HX5CskU7TXdXM/e4ZdQDNpp8o/vsa1YiM5U0xSRuBXVCXseS9qTGVRth6px5VhrrOgg3ZQDA7U4Kb8LUmGy5E/sVjeP7jGNYKpLKL2dWhMHpnux2OoH6x1J6cbBGoq9R4x9kDV/ReBFoBGlQkcIHHxEDVf0/O5nmJmuimhUKMXeQc1ATlmFHSuwAwtfTN2V4CMrTbGMYCwWZtOVfzyHpcw4EdZNA2OIXC7kYkxtEPb3XOGcFPrI0rHfbmAiwoJILPv4lPvCXo5B8Bx744UjB4C9M1s8L3d3dbKmZtTVJsVc5mchgxEsHSRY866MkA3w8p2bp2k8bnExFH3G++2MVLN6zsv04LLXv6ZZLIbnS63RMpNK5JEXyKi+6O0zITAbQgvgiBG0nqXxXHwn8N/A/TS2opDdpuTFJzy94XkY/k9ScQgzeA8sTrbRPwSQs3euPzTLo+4lgDrCNUvdP7zCtBJFmlFDfE">
+<input type="hidden" name="__VIEWSTATE10" id="__VIEWSTATE10" value="se3xQ7HHmZWUYVZkjMA+oL07xahOKjJFqmhfE5R7ooh+PSs9yg5bWXCfLeVzasVu1HV4eMFE1KnbngiaKJs7fD6EexGHnPmiU1GHEo/92zULW18owpIBdoJ6agYqWKr6YTZPQJJWMF/nwOy9R0i8jOGGoc7bp1ompB1JJ3uvktHXCP7PBYK99ZTR6qT5JOJBiFhRIVL/4PXY0x+sStxdmu37QpNCam5QDMC08FzjgsMSBDGpbfxcS/G5dbcNSB/0/Xq82X9DPZ18SKXe94JW2UjXb7qaRuB5ulGKr4ZhDW4u7o/j6TaViM5n1jiIQ8N7YOTVYKibt8RfF2FGFlykw+g2wpLMAUT9T2RZxV2AGrGAxjKpOk/z6qA4pBX2r2f6eU8/iP9P0mTWsZoK1NW4H9Qtxyv8iabbHUjCiW7mZpYssIeipGv18wPmyUzGc4oJKPoxbldW//BF6UCP3rJvXTvweXiLBVtvi1B9ZGFhNuFXRvxqmHXHLio/QS9gxCSO81k9wjZdX55n+M5LuXRZ+H5eSQKerzC5Q/v1Jh/GxYWkPIOHUhB7N2KXTlCH/qKn/iyQue6Rf3WYKMrSt9ag1Xh2UOEWv/5btNU/udhWCFa0IlrXhEhzWo9pVHIva08n2wgc6l5yQn5zks/NNIRPJ744SLMGxG4PQUW5TYVJP5UYXEXOPaMq4X8fJnXiO8yWQ8w1fGaOr98nHmeswWeuxSKKN6zZliqSk0JuHFn1mAE0RW8Io8SGU4T2O4GNW0eWiZX/k53lHgUAjVa2TL1PZPWJndlZfy2wHfW8kzx57l+zNivhD4BpppLaW/HLXcEX+3SCbA==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['mainform'];
+if (!theForm) {
+    theForm = document.mainform;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./RAMPRAVESH_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./RAMPRAVESH_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./RAMPRAVESH_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script src="./RAMPRAVESH_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="812B33A5">
+</div>
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'mainform', ['tctl00$up1','up1'], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+        
+        <div id="main_content">
+            <div id="up1">
+	
+                    <div id="header" class="ssoHeaderMain">
+                        <script type="text/javascript">
+                            var prm = Sys.WebForms.PageRequestManager.getInstance();
+                            prm.add_endRequest(function () { initCommonJS(); initMasterJS(); });
+                        </script>
+                        <div class="ssoHeaderInnerTop">
+                            <div class="ssoHeaderLeftSection">
+                                <div class="ssoLogo1">
+                                    <img src="./RAMPRAVESH_files/ssologo.png" alt="RAJSSO">
+                                </div>
+                                <div class="ssoLogoCaption">
+                                    <p>
+                                        Rajasthan Single Sign On
+                                        <a onclick="javascript:ShowModelPopup(&#39;iframe&#39;,&#39;versions&#39;,&#39;Release Notes&#39;, &#39;modal-iframe&#39;);" style="cursor: pointer">
+                                            <span class="ssoVersion">v<span id="lblVersion">14.0</span></span>
+                                        </a>
+                                    </p>
+                                    <p>
+                                        <span class="ssoLogoCaptionSmall">Government of Rajasthan</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ssoProfileMain">
+                                
+                                <div id="ssoProfile" class="ssoProfileDiv profileimage">
+                                    <img id="img_ProfileIcon" title="Change Photo" class="profileIconSmall" src="data:image/jpeg;base64,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">
+                                    <span class="user-name">
+                                        <span id="lbl_UserName">SINGHISKINGKISHAN111</span>
+                                        <a id="lnkUpdateProfile1" title="Update Profile" class="updateprofile-btn" href="javascript:__doPostBack(&#39;ctl00$lnkUpdateProfile1&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o"></i></a>
+                                        
+                                    </span>
+                                </div>
+                                <div id="ssoProfileDetail" class="ssoProfileDetails">
+                                    <div class="arrowIcon profilearrow"></div>
+                                    <div class="ssoProfileDetailTop pt_10 pb_10">
+                                        <div class="ssoProfileDetailImg">
+                                            <div id="ssoProfilePhoto" class="ssoProfileImgDiv">
+                                                <img id="imgprofilePhoto" src="data:image/jpeg;base64,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">
+                                                <div class="photo-overlay">
+                                                    <a class="icon" title="Change Photo">
+                                                        <i class="fa fa-edit"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ssoProfileDetailTopRight">
+                                            <div class="ssoCitizenName">
+                                                <p id="ssolbl_DisplayName">
+                                                    <span id="lbl_DisplayName">RAMPRAVESH</span>
+                                                </p>
+                                                <p id="ssolbl_Designation" class="designation">
+                                                    <span id="lbl_Designation" class="designation">(CITIZEN)</span>
+                                                </p>
+                                                <p id="ssolbl_Email">
+                                                    <span id="lbl_Email">SINGHISKINGKISHAN111@GMAIL.COM</span>
+                                                </p>
+                                                <p id="ssolbl_Mobile">
+                                                    <span id="lbl_Mobile"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ssoHeaderRightSection pull-right">
+                                
+                                <div id="ssoWidget" class="ssoWidget pull-left ml_10">
+                                    <div id="ssowidgeticon" class="ssoProfileDiv">
+                                        <i class="fa fa-th ssowidget" title="Widgets" aria-hidden="true"></i>
+                                    </div>
+                                    <div id="ssowidgetdetail" class="ssoProfileDetails">
+                                        <div class="arrowIcon arrowIconwidget"></div>
+                                        <div class="ssoProfileDetailTop widgetdetails">
+                                            <div class="col-xs-12 pl_5 pr_5 mb_10">
+                                                <div id="profilePhoto" class="col-xs-3 widgettitle"><a href="https://sso.rajasthan.gov.in/profile#" title="My Notes"><i class="fa fa-user-circle-o" aria-hidden="true"></i>Change Photo</a></div>
+                                                <div class="col-xs-3 widgettitle">
+                                                    <a id="lnkUpdateProfile" title="Update Profile" href="javascript:__doPostBack(&#39;ctl00$lnkUpdateProfile&#39;,&#39;&#39;)"><i class="fa fa-pencil-square-o"></i>Update Profile</a>
+                                                </div>
+                                                <div class="col-xs-3 widgettitle">
+                                                    <a id="lnkChangePWD" title="Change Password" href="javascript:__doPostBack(&#39;ctl00$lnkChangePWD&#39;,&#39;&#39;)"><i class="fa fa-key"></i>Change Pass</a>
+                                                </div>
+                                                <div id="mynotes" class="col-xs-3 widgettitle"><a href="https://sso.rajasthan.gov.in/mynotes" title="My Notes" data-iframe="true" data-css="modal-iframe"><i class="fa fa-file-text-o"></i>My Notes</a></div>
+                                                <div class="col-xs-3 widgettitle"><a href="https://sso.rajasthan.gov.in/mydocs" title="My Docs"><i class="fa fa-folder-open-o"></i>My Docs</a></div>
+                                                <div class="col-xs-3 widgettitle"><a href="https://sso.rajasthan.gov.in/favourites" title="My Favourites" data-iframe="true" data-css="modal-iframe"><i class="fa fa-star-o"></i>My Favourites</a></div>
+                                                <div class="col-xs-3 widgettitle"><a href="https://sso.rajasthan.gov.in/feedback" title="Feedback" data-iframe="true" data-css="modal-iframe"><i class="fa fa-commenting-o"></i>Feedback</a></div>
+                                                <div id="lnkMail" class="col-xs-3 widgettitle mail"><a href="https://sso.rajasthan.gov.in/mail?path=mail" title="My E-Mail" target="_blank"><i class="fa fa-envelope-o"></i>My E-Mail</a></div>
+                                                
+                                                
+                                                
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ssoLogout pull-left ml_10">
+                                    <a id="lnkSignOut" title="Signout" href="javascript:__doPostBack(&#39;ctl00$lnkSignOut&#39;,&#39;&#39;)"><i class="fa fa-times ssowidget" title="Logout" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="ssoMenu">
+                        <nav id="column-left" style="min-height: 608px;">
+                            <a id="button-menu" class="pull-left"><i class="fa fa-indent fa-md"></i></a>
+                            <ul id="menu">
+                                
+                                
+                                
+                                <li>
+                                    <a id="lnkPublicApps" class="tooltip-right" data-pname="dashboard" data-title="Citizen Apps (G2C)" href="javascript:__doPostBack(&#39;ctl00$lnkPublicApps&#39;,&#39;&#39;)"><i class="fa fa-user"></i><span>Citizen Apps (G2C)</span></a></li>
+                                
+                                <li>
+                                    <a id="lnkTransactions" class="tooltip-right" data-pname="mytransactions" data-title="My Transactions" href="javascript:__doPostBack(&#39;ctl00$lnkTransactions&#39;,&#39;&#39;)"><i class="fa fa-inr"></i><span>My Transactions</span></a></li>
+                                <li>
+                                    <a id="lnkAppStatus" class="tooltip-right" data-pname="appstatus" data-title="Application Status" href="javascript:__doPostBack(&#39;ctl00$lnkAppStatus&#39;,&#39;&#39;)"><i class="fa fa-check-circle-o"></i><span>Application Status</span></a></li>
+                                <li>
+                                    <a id="lnkLogs" class="tooltip-right" data-pname="mylogs" data-title="My Logs" href="javascript:__doPostBack(&#39;ctl00$lnkLogs&#39;,&#39;&#39;)"><i class="fa fa-bar-chart-o fa-fw"></i><span>My Logs</span></a></li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                <li>
+                                    <a href="https://sso.rajasthan.gov.in/helpdesk" class="tooltip-right" title="Helpdesk (Working days from 10 AM to 6 PM)" data-pname="helpdesk" data-title="Contact Us" data-iframe="true" data-css="modal-iframe"><i class="fa fa-phone"></i><span>Helpdesk</span></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                
+</div>
+            <div id="ls-canvas" class="ls-canvas" style="height: 530px;">
+                <div class="content">
+                    
+    <div class="headertxt">
+        <span class="title">Update Profile</span>
+        
+    </div>
+    <div id="cpBody_userProfile" class="main_content" style="height: 493px;">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">SSOID/ User Name</label>
+                        <input name="ctl00$cpBody$txt_LogInID" type="text" value="SINGHISKINGKISHAN111" maxlength="50" readonly="readonly" id="cpBody_txt_LogInID" disabled="disabled" tabindex="2000" class="aspNetDisabled form-control">
+                    </div>
+                    <span id="cpBody_RequiredFieldValidator3" class="error" style="display:none;">SSOID Required</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">First Name<span class="required">*</span></label>
+                        <input name="ctl00$cpBody$txt_FirstName" type="text" autocomplete="off" value="RAMPREVESH" maxlength="50" id="cpBody_txt_FirstName" tabindex="1" class="form-control">
+                    </div>
+                    <span id="cpBody_rfv_txt_FirstName" class="error" style="display:none;">First Name Required</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty is-focused">
+                    <div class="input-group">
+                        <label class="control-label">Last Name</label>
+                        <input name="ctl00$cpBody$txt_LastName" type="text" autocomplete="off" maxlength="50" id="cpBody_txt_LastName" tabindex="1" class="form-control">
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">Display Name<span class="required">*</span></label>
+                        <input name="ctl00$cpBody$txt_Data_UserName" type="text" autocomplete="off" value="RAMPRAVESH" maxlength="100" id="cpBody_txt_Data_UserName" tabindex="1" class="form-control">
+                    </div>
+                    <span id="cpBody_vldReqUsername" class="error" style="display:none;">User Name Required</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">Date of Birth (DD/MM/YYYY)<span class="required">*</span></label>
+                        <input name="ctl00$cpBody$txt_DOB" type="text" value="08/08/1992" maxlength="10" id="cpBody_txt_DOB" tabindex="2" class="form-control date-picker" readonly="readonly">
+                        <span class="input-group-btn">
+                            <a id="cal1" title="Update Date of Birth" class="btn" tabindex="6"><i class="fa fa-calendar"></i></a>
+                        </span>
+                    </div>
+                    <span id="cpBody_RequiredFieldValidator1" class="error" style="display:none;">Date of Birth required</span>
+                    <span id="cpBody_rev_txt_DOB" class="error" style="display:none;">Invalid Date of Birth</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label label-fixed">Gender<span class="required">*</span></label>
+                        <span id="cpBody_rbtnListGender" class="form-control pull-left radio-input"><input id="cpBody_rbtnListGender_0" type="radio" name="ctl00$cpBody$rbtnListGender" value="MALE" checked="checked" tabindex="3"><label for="cpBody_rbtnListGender_0">Male</label><input id="cpBody_rbtnListGender_1" type="radio" name="ctl00$cpBody$rbtnListGender" value="FEMALE" tabindex="3"><label for="cpBody_rbtnListGender_1">Female</label><input id="cpBody_rbtnListGender_2" type="radio" name="ctl00$cpBody$rbtnListGender" value="TRANSGENDER" tabindex="3"><label for="cpBody_rbtnListGender_2">Transgender</label><input id="cpBody_rbtnListGender_3" type="radio" name="ctl00$cpBody$rbtnListGender" value="OTHER" tabindex="3"><label for="cpBody_rbtnListGender_3">Other</label></span>
+                    </div>
+                    <span id="cpBody_rfv_rbtnListGender" class="error" style="display:none;">Gender required</span>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                        <label class="control-label">Mobile Number</label>
+                        <input name="ctl00$cpBody$txt_mobile" type="text" maxlength="10" readonly="readonly" id="cpBody_txt_mobile" disabled="disabled" tabindex="4" class="aspNetDisabled form-control">
+                        <span class="input-group-btn">
+                            <a id="lnkMobile" title="Update Mobile No." class="btn" tabindex="2"><i class="fa fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <span id="cpBody_RegularExpressionValidator1" class="error" style="display:none;">Invalid Mobile Number. Use 10 digit Mobile Number.</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">E-Mail Personal</label>
+                        <input name="ctl00$cpBody$txt_personalMail" type="text" value="SINGHISKINGKISHAN111@GMAIL.COM" maxlength="50" readonly="readonly" id="cpBody_txt_personalMail" disabled="disabled" tabindex="5" class="aspNetDisabled form-control mt_0">
+                        <span class="input-group-btn">
+                            <a id="cpBody_lnkEmail" title="Update Personal E-Mail" class="btn"><i class="fa fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <span id="cpBody_rev_txt_personalMail" class="error" style="display:none;">Invalid Email Address.</span>
+                <span class="material-input"></span></div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                        <label class="control-label">Telephone Number</label>
+                        <input name="ctl00$cpBody$txt_telephoneNumber" type="text" maxlength="15" id="cpBody_txt_telephoneNumber" tabindex="10" class="form-control">
+                        <span id="cpBody_RegularExpressionValidator2" class="error" style="display:none;">Invalid Pnone Number. Enter only Digits.</span>
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">Postal Address</label>
+                        <input name="ctl00$cpBody$txt_postalAddress" type="text" value="VILL  PRABHUTANDA POST PALIYA" id="cpBody_txt_postalAddress" tabindex="12" title="VILL  PRABHUTANDA POST PALIYA" class="form-control">
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">Postal Code</label>
+                        <input name="ctl00$cpBody$txt_postalcode" type="text" value="276403" maxlength="6" id="cpBody_txt_postalcode" tabindex="13" class="form-control">
+                    </div>
+                    <span id="cpBody_rev_txt_postalcode" class="error" style="display:none;">Invalid Postal Code. Use only 6 digit postal code.</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label">City/ District</label>
+                        <input name="ctl00$cpBody$txt_nicCity" type="text" value="DIST MAU" maxlength="50" id="cpBody_txt_nicCity" tabindex="14" class="form-control">
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating">
+                    <div class="input-group">
+                        <label class="control-label label-fixed">State</label>
+                        <select name="ctl00$cpBody$ddlState" id="cpBody_ddlState" tabindex="15" class="form-control">
+	<option value="0">--SELECT STATE--</option>
+	<option value="1">ANDAMAN &amp; NICOBAR ISLANDS</option>
+	<option value="2">ANDHRA PRADESH</option>
+	<option value="3">ARUNACHAL PRADESH</option>
+	<option value="4">ASSAM</option>
+	<option value="5">BIHAR</option>
+	<option value="6">CHANDIGARH</option>
+	<option value="7">CHHATTISGARH</option>
+	<option value="8">DADRA &amp; NAGAR HAVELI</option>
+	<option value="9">DAMAN &amp; DIU</option>
+	<option value="10">DELHI</option>
+	<option value="11">GOA</option>
+	<option value="12">GUJARAT</option>
+	<option value="13">HARYANA</option>
+	<option value="14">HIMACHAL PRADESH</option>
+	<option value="15">JAMMU AND KASHMIR</option>
+	<option value="16">JHARKHAND</option>
+	<option value="17">KARNATAKA</option>
+	<option value="18">KERALA</option>
+	<option value="19">LAKSHADWEEP</option>
+	<option value="20">MADHYA PRADESH</option>
+	<option value="21">MAHARASHTRA</option>
+	<option value="22">MANIPUR</option>
+	<option value="23">MEGHALAYA</option>
+	<option value="24">MIZORAM</option>
+	<option value="25">NAGALAND</option>
+	<option value="26">ORISSA</option>
+	<option value="27">PONDICHERRY</option>
+	<option value="28">PUNJAB</option>
+	<option value="29">RAJASTHAN</option>
+	<option value="30">SIKKIM</option>
+	<option value="31">TAMIL NADU</option>
+	<option value="32">TELANGANA</option>
+	<option value="33">TRIPURA</option>
+	<option selected="selected" value="34">UTTAR PRADESH</option>
+	<option value="35">UTTARAKHAND</option>
+	<option value="36">WEST BENGAL</option>
+
+</select>
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                        <label class="control-label">Bhamashah ID/ Enrollment ID</label>
+                        <input name="ctl00$cpBody$txt_BID" type="text" autocomplete="off" maxlength="15" readonly="readonly" id="cpBody_txt_BID" disabled="disabled" tabindex="16" class="aspNetDisabled form-control">
+                        <span class="input-group-btn">
+                            <a id="cpBody_lnkBid" title="Update Bhamashah ID/ Enrollment ID" class="btn" tabindex="16"><i class="fa fa-edit"></i></a>
+                        </span>
+                    </div>
+                    <input type="hidden" name="ctl00$cpBody$hf_BhamashahMId" id="cpBody_hf_BhamashahMId">
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                        <label class="control-label">Aadhaar ID (VID)</label>
+                        <input name="ctl00$cpBody$txt_UID" type="password" maxlength="16" readonly="readonly" id="cpBody_txt_UID" disabled="disabled" tabindex="17" class="aspNetDisabled form-control" data-masked-aadhaar="true" placeholder="" autocomplete="new-password" data-value="">
+                        <span class="input-group-btn">
+                            <input type="submit" name="ctl00$cpBody$lnkUID" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$lnkUID&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_lnkUID" tabindex="17" title="Update Aadhaar ID (VID)" class="btn btn-primary fa-btn">
+                            
+                        </span>
+                    </div>
+                    <span id="cpBody_rev_txt_UID" class="error" style="display:none;">Invalid Aadhar ID. Use only 12/ 16 digit Aadhar ID/ VID.</span>
+                <span class="material-input"></span></div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                <div class="form-group label-floating is-empty">
+                    <div class="input-group">
+                        <label class="control-label label-fixed">Old SSOID(s)</label>
+                        <input name="ctl00$cpBody$txtOldSSOIDs" type="text" readonly="readonly" id="cpBody_txtOldSSOIDs" disabled="disabled" class="aspNetDisabled form-control">
+                    </div>
+                <span class="material-input"></span></div>
+            </div>
+        </div>
+        
+        <div id="cpBody_trUpdateProfile" class="row no_margin text-center">
+            <input type="submit" name="ctl00$cpBody$btn_Update" value="Update" onclick="ShowConfirmWaitBox(&#39;Are you sure you want to update profile?&#39;,event);WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_Update&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btn_Update" tabindex="18" class="btn btn-primary">
+            <input type="submit" name="ctl00$cpBody$btn_Cancel" value="Cancel" id="cpBody_btn_Cancel" tabindex="19" class="btn btn-primary">
+            <input type="hidden" name="ctl00$cpBody$hf_UserType" id="cpBody_hf_UserType" value="GOOGLE">
+        </div>
+    </div>
+    <div class="hidden">
+        <input type="hidden" name="ctl00$cpBody$hdnFP" id="cpBody_hdnFP">
+        <input type="button" name="ctl00$cpBody$btnSendAuthRequest" value="" onclick="javascript:__doPostBack(&#39;ctl00$cpBody$btnSendAuthRequest&#39;,&#39;&#39;)" id="cpBody_btnSendAuthRequest" class="hidden">
+        <input type="button" name="ctl00$cpBody$btnSendAuthRequest1" value="" onclick="javascript:__doPostBack(&#39;ctl00$cpBody$btnSendAuthRequest1&#39;,&#39;&#39;)" id="cpBody_btnSendAuthRequest1" class="hidden">
+        <input type="submit" name="ctl00$cpBody$btnCancelAuthRequest" value="" onclick="return ShowWaitBox(true);" id="cpBody_btnCancelAuthRequest" class="hidden">
+    </div>
+    <!-- Modal -->
+    <div id="cpBody_Panel1" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_SendOTP&#39;)">
+	
+        <div id="divSendOTP" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                <span id="cpBody_lblHeading">Update Value</span>
+                            </div>
+                            <div class="bootstrap-dialog-close-button">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div class="form-group mb_5 is-empty">
+                                <div class="input-group">
+                                    <input name="ctl00$cpBody$txt_Value" type="text" autocomplete="off" id="cpBody_txt_Value" class="form-control">
+                                    <span id="cpBody_rfv_txt_Value" class="error" style="display:none;">Required Field</span>
+                                </div>
+                            <span class="material-input"></span></div>
+                            <div id="upnSuffix" class="form-group is-empty" style="display: none">
+                                <select name="ctl00$cpBody$ddl_UPNSuffix" id="cpBody_ddl_UPNSuffix" class="form-control">
+
+	</select>
+                            <span class="material-input"></span></div>
+                            <span id="cpBody_lbl_OTPError" class="error"></span>
+                            <input type="hidden" name="ctl00$cpBody$hf_Type" id="cpBody_hf_Type">
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btn_SendOTP" value="Send OTP" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_SendOTP&quot;, &quot;&quot;, true, &quot;vg_SenOTP&quot;, &quot;&quot;, false, false))" id="cpBody_btn_SendOTP" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel2" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_ValidateOTP&#39;)">
+	
+        <div id="divValidateOTP" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                One Time Password (OTP)
+                            </div>
+                            <div class="bootstrap-dialog-close-button">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div class="form-group is-empty">
+                                <div class="input-group">
+                                    <span id="cpBody_lblOTP">Please enter the OTP received via SMS on registered mobile number</span>
+                                    <input name="ctl00$cpBody$txt_OTP" type="text" autocomplete="off" id="cpBody_txt_OTP" class="form-control">
+                                </div>
+                                <span id="cpBody_rfv_txt_OTP" class="error" style="display:none;">OTP Required</span>
+                                <span id="cpBody_lbl_ValidateOTPError" class="error"></span>
+                            <span class="material-input"></span></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        
+                        <input type="submit" name="ctl00$cpBody$btn_ValidateOTP" value="Validate OTP" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_ValidateOTP&quot;, &quot;&quot;, true, &quot;vg_ValidateOTP&quot;, &quot;&quot;, false, false))" id="cpBody_btn_ValidateOTP" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel3" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_SelectMember&#39;)">
+	
+        <div id="divBhamashahMembers" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Select Bhamashah Member
+                            </div>
+                            <div class="bootstrap-dialog-close-button">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div class="form-group label-floating no-margin">
+                                <div class="input-group">
+                                    
+                                </div>
+                                <span id="cpBody_lblMemberError" class="error"></span>
+                                <span id="cpBody_rfv_rbtnListMembers" class="error" style="display:none;"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btn_SelectMember" value="Send OTP" id="cpBody_btn_SelectMember" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel4" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_ValidateSIPF&#39;)">
+	
+        <div id="divSIPF" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Update Employee ID
+                            </div>
+                            <div class="bootstrap-dialog-close-button">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">Employee ID (Ex. RJXXXXXXXXXXXXXX)<span class="required">*</span></label>
+                                    <input name="ctl00$cpBody$txt_SIPFEmployeeID" type="text" autocomplete="off" id="cpBody_txt_SIPFEmployeeID" class="form-control">
+                                    <span id="cpBody_rfv_txt_SIPFEmployeeID" class="error" style="display:none;">SIPF Employee ID required</span>
+                                    <span id="cpBody_rev_txt_SIPFEmployeeID" style="color:Red;display:none;">Invalid SIPF Number</span>
+                                </div>
+                            <span class="material-input"></span></div>
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">SIPF Password<span class="required">*</span></label>
+                                    <input name="ctl00$cpBody$txt_SIPFPassword" type="password" autocomplete="off" id="cpBody_txt_SIPFPassword" class="form-control">
+                                    <span id="cpBody_rfv_txt_SIPFPassword" class="error" style="display:none;">SIPF Password required</span>
+                                </div>
+                            <span class="material-input"></span></div>
+                            <div class="form-group no-margin ">
+                                <a class="pull-left" title="Forgot SIPF Number" onclick="showSIPFSearchModal()">Forgot SIPF Number ?</a>
+                                <a class="pull-right" href="http://sipfportal.rajasthan.gov.in/ResetPassword/ResetPassword" title="Forgot SIPF Portal Password" target="_blank">Forgot SIPF Password ?</a>
+                            </div>
+                            <div style="color: #f00">
+                                <span id="cpBody_lbl_SIPFError"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btn_ValidateSIPF" value="VALIDATE" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_ValidateSIPF&quot;, &quot;&quot;, true, &quot;vg_SIPF&quot;, &quot;&quot;, false, false))" id="cpBody_btn_ValidateSIPF" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel5" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_OTPConfirmYes&#39;)">
+	
+        <div id="divOTPConfirmation" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Confirmation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            Your mobile number &amp; eMail address is not updated in Bhamashah. Do you want to receive OTP on Head of Family's mobile &amp; eMail?
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btn_OTPConfirmYes" value="Yes" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_OTPConfirmYes&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btn_OTPConfirmYes" class="btn btn-primary">
+                        <input type="submit" name="ctl00$cpBody$btn_OTPConfirmNo" value="No" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_OTPConfirmNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btn_OTPConfirmNo" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel6" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btn_DeactiveYes&#39;)">
+	
+        <div id="divDeactiveConfirmation" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Confirmation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div id="deactiveMessage"></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btn_DeactiveYes" value="Yes" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_DeactiveYes&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btn_DeactiveYes" class="btn btn-primary">
+                        <input type="submit" name="ctl00$cpBody$btn_DeactiveNo" value="No" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btn_DeactiveNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btn_DeactiveNo" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel7" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btnUnmapYes&#39;)">
+	
+        <div id="divUnmapConfirmation" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Confirmation
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            
+                            <br>
+                            Do you want to remove the mapping?<br>
+                            क्या आप इसकी मैपिंग हटाना चाहते हैं? 
+                            
+                            <input type="hidden" name="ctl00$cpBody$hf_value" id="cpBody_hf_value">
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btnUnmapYes" value="Yes" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btnUnmapYes&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btnUnmapYes" class="btn btn-primary">
+                        <input type="submit" name="ctl00$cpBody$btnUnmapNo" value="No" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btnUnmapNo&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="cpBody_btnUnmapNo" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <div id="cpBody_Panel8" onkeypress="javascript:return WebForm_FireDefaultButton(event, &#39;cpBody_btnSearchSIPFDetails&#39;)">
+	
+        <div id="divSearchSIPFDetails" class="modal fade bootstrap-dialog type-primary message-box" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header bootstrap-dialog-draggable">
+                        <div class="bootstrap-dialog-header">
+                            <div class="bootstrap-dialog-title">
+                                Search SIPF Number
+                            </div>
+                            <div class="bootstrap-dialog-close-button">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="bootstrap-dialog-message">
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">Employee Name<span class="required">*</span></label>
+                                    <input name="ctl00$cpBody$txt_EmployeeName" type="text" autocomplete="off" id="cpBody_txt_EmployeeName" class="form-control">
+                                    <span id="cpBody_rfv_txtEmployeeName" class="error" style="display:none;">Employee Name is required</span>
+                                </div>
+                            <span class="material-input"></span></div>
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">Date of Birth (DD/MM/YYYY)<span class="required">*</span></label>
+                                    <input name="ctl00$cpBody$txt_EmployeeDOB" type="text" maxlength="10" id="cpBody_txt_EmployeeDOB" class="form-control date-picker" readonly="readonly">
+                                    <span class="input-group-btn">
+                                        <a id="calEmployeeDOB" title="Date of Birth" class="btn"><i class="fa fa-calendar"></i></a>
+                                    </span>
+                                </div>
+                                <span id="cpBody_rfv_txtEmployeeDOB" class="error" style="display:none;">Employee Date of Birth required</span>
+                                <span id="cpBody_rev_txtEmployeeDOB" class="error" style="display:none;">Invalid Date of Birth</span>
+                            <span class="material-input"></span></div>
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">Father/ Husband Name</label>
+                                    <input name="ctl00$cpBody$txt_EmployeeFatherName" type="text" autocomplete="off" id="cpBody_txt_EmployeeFatherName" class="form-control">
+                                </div>
+                            <span class="material-input"></span></div>
+                            <div class="form-group label-floating is-empty">
+                                <div class="input-group">
+                                    <label class="control-label">Date of Appointment (DD/MM/YYYY)</label>
+                                    <input name="ctl00$cpBody$txt_EmployeeDOA" type="text" maxlength="10" id="cpBody_txt_EmployeeDOA" class="form-control date-picker" readonly="readonly">
+                                    <span class="input-group-btn">
+                                        <a id="calEmployeeDOA" title="Date of Birth" class="btn"><i class="fa fa-calendar"></i></a>
+                                    </span>
+                                </div>
+                                <span id="cpBody_rev_txt_EmployeeDOA" class="error" style="display:none;">Invalid Date of Appointment</span>
+                            <span class="material-input"></span></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <input type="submit" name="ctl00$cpBody$btnSearchSIPFDetails" value="Search" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$cpBody$btnSearchSIPFDetails&quot;, &quot;&quot;, true, &quot;vg_SearchSIPF&quot;, &quot;&quot;, false, false))" id="cpBody_btnSearchSIPFDetails" class="btn btn-primary">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+    <!-- Modal -->
+
+                </div>
+            </div>
+            <div id="footer" class="footerMain">
+                © DOIT&amp;C, Govt. of Rajasthan. All Rights Reserved. &nbsp;|&nbsp;
+                    <a onclick="javascript:ShowModelPopup(&#39;iframe&#39;,&#39;versions&#39;,&#39;Release Notes&#39;, &#39;modal-iframe&#39;);" style="cursor: pointer; color: #fff">Release Notes
+                    (Last Release Date:<span id="lblReleaseDate">24-09-2019</span>)</a>
+            </div>
+            <div id="contactus" class="contactus_button">
+                <a onclick="javascript:ShowModelPopup(&#39;iframe&#39;,&#39;helpdesk&#39;,&#39;Helpdesk (Working days from 10 AM to 6 PM)&#39;, &#39;modal-iframe&#39;);">
+                    <img src="./RAMPRAVESH_files/landline.png" alt="Helpdesk">
+                    <div class="contactus_button_text">HELPDESK</div>
+                </a>
+            </div>
+        </div>
+        <div id="UpdateProgress" class="modal-backdrop fade in loading" style="display:none;" role="status" aria-hidden="true">
+	
+                <div class="loading-container">
+                    <div class="loader">Loading...</div>
+                </div>
+            
+</div>
+
+        <script type="text/javascript">
+            //$(window).load(function () { $('.pageloader').fadeOut(); });
+            $(document).ready(function () {
+                initMasterJS();
+                if (history.pushState) {
+                    window.history.pushState(null, null, document.URL);
+                    window.addEventListener('popstate', function () { history.pushState(null, null, document.URL); });
+                }
+
+                $("iframe:hidden:not([src])").addClass("hidden");
+            })
+
+            $(window).load(function () { $("iframe:hidden:not([src])").addClass("hidden"); })
+
+            function initMasterJS() {
+                $(document).click(function (event) {
+                    if (!$(event.target).closest('#ssoWidget').length) {
+                        if ($("#ssowidgetdetail").css("display") == "block") { $("#ssowidgetdetail").hide(); }
+                    }
+                    if (!$(event.target).closest('#ssoProfile img').length && !$(event.target).closest('#ssoProfileDetail').length) {
+                        if ($("#ssoProfileDetail").css("display") == "block") { $("#ssoProfileDetail").hide(); }
+                    }
+                    if (!$(event.target).closest('#ssoNotification').length) {
+                        if ($("#ssoNotificationDetail").css("display") == "block") { $("#ssoNotificationDetail").hide(); }
+                    }
+                })
+                //startClock();
+                $('input[type=submit]').on('click', function () { var $btn = $(this).button('loading'); $btn.button('reset') })
+                $("#ssoProfile img").click(function () { $("#ssoProfileDetail").toggle(); });
+                $("#ssowidgeticon").click(function () { $("#ssowidgetdetail").toggle(); });
+                $("#ssowidgetdetail .widgettitle").click(function () { $("#ssowidgetdetail").hide(); });
+                $("#ssoNotificationIcon").click(function () { $("#ssoNotificationDetail").toggle(); });
+                $("#profilePhoto, #ssoProfilePhoto").click(function () { ShowModelPopup('iframe', 'photo', 'Change Photo', 'changephoto'); });
+                $('a.not-active').parent().addClass('hiddenmenu');
+
+                $("a[data-iframe='true']").click(function (e) { var modalCSS = ''; if ($(this).attr('data-css')) { modalCSS = $(this).attr('data-css'); } ShowModelPopup('iframe', $(this).attr('href'), $(this).attr('title'), modalCSS); e.preventDefault(); });
+                
+                $(".tilePanel").click(function (e) {
+                    if ($(this).attr("data-iframeapp") == "true") { document.forms[0].target = '_blank'; }
+                    else { document.forms[0].target = '_self'; }
+                });
+                $(".tileIcon img").error(function () { this.src = 'images/apps/app.png'; });
+                initMaterialJS();
+                setHeight();
+
+                $(window).resize(function () { setHeight(); });
+                $(window).on("orientationchange", function () { setHeight(); });
+            }
+
+            function onDocumentTouchStart(event) {
+                if (!$(event.target).closest('#ssoWidget').length) {
+                    if ($("#ssowidgetdetail").css("display") == "block") { $("#ssowidgetdetail").hide(); }
+                }
+                if (!$(event.target).closest('#ssoProfile img').length && !$(event.target).closest('#ssoProfileDetail').length) {
+                    if ($("#ssoProfileDetail").css("display") == "block") { $("#ssoProfileDetail").hide(); }
+                }
+                if (!$(event.target).closest('#ssoNotification').length) {
+                    if ($("#ssoNotificationDetail").css("display") == "block") { $("#ssoNotificationDetail").hide(); }
+                }
+            }
+
+            //function startClock() {
+            //    showClock($('#currentDate')); setInterval(function () { showClock($('#currentDate')); }, 5000);
+            //}
+
+            function setHeight() { var documentHeight = $(document).innerHeight(); $("#column-left").css('min-height', documentHeight); };
+
+        </script>
+        
+    <script type="text/javascript" src="./RAMPRAVESH_files/moment.js.download"></script>
+    <script type="text/javascript" src="./RAMPRAVESH_files/bootstrap-datetimepicker.js.download"></script>
+    <script>
+        function initJS() {
+            //var waitBox = $('#form1').SSOWaitBox();
+            //$("form").submit(function () { return $.WaitBox(); });
+
+            $("#cpBody_txt_DOB").attr("readonly", "readonly").datetimepicker({ viewMode: 'years', maxDate: 'now' });
+            $("#cal1").click(function () { $("#cpBody_txt_DOB").data("DateTimePicker").show(); });
+
+            $("#cpBody_txt_EmployeeDOB").attr("readonly", "readonly").datetimepicker({ viewMode: 'years', maxDate: 'now' });
+            $("#calEmployeeDOB").click(function () { $("#cpBody_txt_EmployeeDOB").data("DateTimePicker").show(); });
+
+            $("#cpBody_txt_EmployeeDOA").attr("readonly", "readonly").datetimepicker({ viewMode: 'years', maxDate: 'now' });
+            $("#calEmployeeDOA").click(function () { $("#cpBody_txt_EmployeeDOA").data("DateTimePicker").show(); });
+
+            var isCitizen = 'True';
+            if (isCitizen == 'True') {
+                $('span.dept-required').remove();
+                var isFBGoogle = 'True';
+                if (isFBGoogle == 'True') { $('span.fbgoogle-notrequired').remove(); }
+            }
+
+            $("#lnkMobile").click(function () {
+                if ($("#cpBody_hf_Type").val() != "mobile") $("#cpBody_txt_Value").val("");
+                $("#cpBody_hf_Type").val("mobile");
+                $("#cpBody_txt_Value").attr("placeholder", "Mobile Number")
+                $("#cpBody_lblHeading").text("Update Mobile Number");
+                $("#cpBody_rfv_txt_Value").text("Mobile Number is required");
+                $("#cpBody_lbl_OTPError").text("");
+                $("#cpBody_btn_SyncProfile").hide();
+                showSendOTPModal();
+            })
+            $("#cpBody_lnkEmail").click(function () {
+                if ($("#cpBody_hf_Type").val() != "mail")
+                    $("#cpBody_txt_Value").val("");
+                $("#cpBody_hf_Type").val("mail");
+                $("#cpBody_txt_Value").attr("placeholder", "Email (Personal)")
+                $("#cpBody_lblHeading").text("Update Email (Personal)");
+                $("#cpBody_rfv_txt_Value").text("Email Address is required");
+                $("#cpBody_lbl_OTPError").text("");
+                $("#cpBody_btn_SyncProfile").hide();
+                showSendOTPModal();
+            })
+            $("#cpBody_lnkOfficialEmail").click(function () {
+                if ($("#cpBody_hf_Type").val() != "mailOfficial") $("#cpBody_txt_Value").val("");
+                $("#cpBody_hf_Type").val("mailOfficial");
+                $("#cpBody_txt_Value").attr("placeholder", "Username")
+                $("#cpBody_lblHeading").text("Update Email (Official)");
+                $("#cpBody_rfv_txt_Value").text("Username is required");
+                $("#cpBody_lbl_OTPError").text("");
+                $("#cpBody_btn_SyncProfile").hide();
+                showSendOTPModal();
+            })
+            $("#cpBody_lnkBid").click(function () {
+                if ($("#cpBody_hf_Type").val() != "bid") $("#cpBody_txt_Value").val("");
+                $("#cpBody_hf_Type").val("bid");
+                $("#cpBody_txt_Value").attr("placeholder", "Bhamashah ID/ EID")
+                $("#cpBody_lblHeading").text("Update Bhamashah ID/ Enrollment ID");
+                $("#cpBody_rfv_txt_Value").text("Bhamashah ID/ Enrollment ID is required");
+                $("#cpBody_lbl_OTPError").text("");
+                $("#cpBody_btn_SyncProfile").show();
+                showSendOTPModal();
+                $("#cpBody_btn_SendOTP").val("Fetch Members");
+            })
+            
+            $("#cpBody_lnkEmployeeID").click(function () {
+                $("#cpBody_hf_Type").val("sipf");
+                $("#cpBody_btn_SyncProfile").hide();
+                showSIPFModal();
+            })
+
+            //$("input[type=submit]").click(function () { if (Page_ClientValidate()) { $(this).val("Loading...").addClass("btn-loading"); return true; } })
+        }
+
+        function showAadhaarModal() {
+            if ($("#cpBody_hf_Type").val() != "uid") $("#cpBody_txt_Value").val("");
+            $("#cpBody_hf_Type").val("uid");
+            $("#cpBody_txt_Value").attr("placeholder", "Aadhaar Number/ VID");
+            $("#cpBody_lblHeading").text("Update Aadhaar Number/ VID");
+            $("#cpBody_rfv_txt_Value").text("Aadhaar Number/ VID is required");
+            $("#cpBody_lbl_OTPError").text("");
+            $("#cpBody_btn_SyncProfile").show();
+            showSendOTPModal();
+        }
+
+        function showSendOTPModal() {
+            $("#upnSuffix").hide();
+            $("#cpBody_txt_Value").attr("type", "text");
+            if ($("#cpBody_hf_Type").val() === "mailOfficial") { $("#upnSuffix").show(); }
+
+            if ($("#cpBody_hf_Type").val() == "bid") {
+                $("#cpBody_btn_SendOTP").val("Fetch Members");
+            }
+            else if ($("#cpBody_hf_Type").val() == "uid") {
+                $("#cpBody_btn_SendOTP").val("Continue");
+                $("#cpBody_txt_Value").attr("type", "password");
+            }
+            else {
+                $("#cpBody_btn_SendOTP").val("Send OTP");
+            }
+            $("#cpBody_txt_OTP").val('');
+            $("#divSendOTP").modal({ backdrop: 'static', keyboard: false });
+            $('#divSendOTP').on('shown.bs.modal', function () { $("#cpBody_txt_Value").focus(); });
+        }
+
+        function showValidateModal() {
+            $('#divValidateOTP').modal({ backdrop: 'static', keyboard: false });
+            $('#divValidateOTP').on('shown.bs.modal', function () { $("#cpBody_txt_OTP").focus(); })
+        }
+
+        function showBhamashahModal() {
+            $('#divBhamashahMembers').modal({ backdrop: 'static', keyboard: false });
+            $('#divBhamashahMembers').on('shown.bs.modal', function () { $("#cpBody_rbtnListMembers").focus(); })
+        }
+
+        function showSIPFModal() {
+            $("#cpBody_btn_SendOTP").val("Send OTP");
+            $('#divSIPF').modal({ backdrop: 'static', keyboard: false });
+            $('#divSIPF').on('shown.bs.modal', function () { $("#cpBody_txt_SIPFEmployeeID").focus(); })
+        }
+
+        function showSIPFSearchModal() {
+            $('#divSearchSIPFDetails').modal({ backdrop: 'static', keyboard: false });
+            $('#divSearchSIPFDetails').on('shown.bs.modal', function () { $("#cpBody_txt_EmployeeName").focus(); })
+        }
+
+        function showSendOTPConfirmBox() {
+            $('#divOTPConfirmation').modal({ backdrop: 'static', keyboard: false });
+        }
+
+        function showConfirmationBox(message) {
+            $("#deactiveMessage").html(message);
+            $('#divDeactiveConfirmation').modal({ backdrop: 'static', keyboard: false });
+        }
+
+        function showUnmapConfirmationBox() {
+            $('#divUnmapConfirmation').modal({ backdrop: 'static', keyboard: false });
+        }
+
+        function getCapturedData(fpData) {
+            $("#cpBody_hdnFP").val(fpData.fpResult);
+            $("#cpBody_btnSendAuthRequest").click();
+        }
+
+        function getCapturedData1(fpData) {
+            $("#cpBody_hdnFP").val(fpData.fpResult);
+            $("#cpBody_btnSendAuthRequest1").click();
+        }
+
+        function onCloseCallback() {
+            $("#cpBody_btnCancelAuthRequest").click();
+        }
+    </script>
+    <script type="text/javascript">Sys.Application.add_load(initJS);</script>
+
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("cpBody_RequiredFieldValidator3"), document.getElementById("cpBody_rfv_txt_FirstName"), document.getElementById("cpBody_vldReqUsername"), document.getElementById("cpBody_RequiredFieldValidator1"), document.getElementById("cpBody_rev_txt_DOB"), document.getElementById("cpBody_rfv_rbtnListGender"), document.getElementById("cpBody_RegularExpressionValidator1"), document.getElementById("cpBody_rev_txt_personalMail"), document.getElementById("cpBody_RegularExpressionValidator2"), document.getElementById("cpBody_rev_txt_postalcode"), document.getElementById("cpBody_rev_txt_UID"), document.getElementById("cpBody_rfv_txt_Value"), document.getElementById("cpBody_rfv_txt_OTP"), document.getElementById("cpBody_rfv_rbtnListMembers"), document.getElementById("cpBody_rfv_txt_SIPFEmployeeID"), document.getElementById("cpBody_rev_txt_SIPFEmployeeID"), document.getElementById("cpBody_rfv_txt_SIPFPassword"), document.getElementById("cpBody_rfv_txtEmployeeName"), document.getElementById("cpBody_rfv_txtEmployeeDOB"), document.getElementById("cpBody_rev_txtEmployeeDOB"), document.getElementById("cpBody_rev_txt_EmployeeDOA"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var cpBody_RequiredFieldValidator3 = document.all ? document.all["cpBody_RequiredFieldValidator3"] : document.getElementById("cpBody_RequiredFieldValidator3");
+cpBody_RequiredFieldValidator3.controltovalidate = "cpBody_txt_LogInID";
+cpBody_RequiredFieldValidator3.focusOnError = "t";
+cpBody_RequiredFieldValidator3.errormessage = "SSOID Required";
+cpBody_RequiredFieldValidator3.display = "Dynamic";
+cpBody_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_RequiredFieldValidator3.initialvalue = "";
+var cpBody_rfv_txt_FirstName = document.all ? document.all["cpBody_rfv_txt_FirstName"] : document.getElementById("cpBody_rfv_txt_FirstName");
+cpBody_rfv_txt_FirstName.controltovalidate = "cpBody_txt_FirstName";
+cpBody_rfv_txt_FirstName.focusOnError = "t";
+cpBody_rfv_txt_FirstName.errormessage = "First Name Required";
+cpBody_rfv_txt_FirstName.display = "Dynamic";
+cpBody_rfv_txt_FirstName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txt_FirstName.initialvalue = "";
+var cpBody_vldReqUsername = document.all ? document.all["cpBody_vldReqUsername"] : document.getElementById("cpBody_vldReqUsername");
+cpBody_vldReqUsername.controltovalidate = "cpBody_txt_Data_UserName";
+cpBody_vldReqUsername.focusOnError = "t";
+cpBody_vldReqUsername.errormessage = "User Name Required";
+cpBody_vldReqUsername.display = "Dynamic";
+cpBody_vldReqUsername.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_vldReqUsername.initialvalue = "";
+var cpBody_RequiredFieldValidator1 = document.all ? document.all["cpBody_RequiredFieldValidator1"] : document.getElementById("cpBody_RequiredFieldValidator1");
+cpBody_RequiredFieldValidator1.controltovalidate = "cpBody_txt_DOB";
+cpBody_RequiredFieldValidator1.focusOnError = "t";
+cpBody_RequiredFieldValidator1.errormessage = "Date of Birth required";
+cpBody_RequiredFieldValidator1.display = "Dynamic";
+cpBody_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_RequiredFieldValidator1.initialvalue = "";
+var cpBody_rev_txt_DOB = document.all ? document.all["cpBody_rev_txt_DOB"] : document.getElementById("cpBody_rev_txt_DOB");
+cpBody_rev_txt_DOB.controltovalidate = "cpBody_txt_DOB";
+cpBody_rev_txt_DOB.focusOnError = "t";
+cpBody_rev_txt_DOB.errormessage = "Invalid Date of Birth";
+cpBody_rev_txt_DOB.display = "Dynamic";
+cpBody_rev_txt_DOB.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_DOB.validationexpression = "([0-3][0-9])[/]([0-1][0-9])[/]([1-2]\\d{3})";
+var cpBody_rfv_rbtnListGender = document.all ? document.all["cpBody_rfv_rbtnListGender"] : document.getElementById("cpBody_rfv_rbtnListGender");
+cpBody_rfv_rbtnListGender.controltovalidate = "cpBody_rbtnListGender";
+cpBody_rfv_rbtnListGender.focusOnError = "t";
+cpBody_rfv_rbtnListGender.errormessage = "Required";
+cpBody_rfv_rbtnListGender.display = "Dynamic";
+cpBody_rfv_rbtnListGender.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_rbtnListGender.initialvalue = "";
+var cpBody_RegularExpressionValidator1 = document.all ? document.all["cpBody_RegularExpressionValidator1"] : document.getElementById("cpBody_RegularExpressionValidator1");
+cpBody_RegularExpressionValidator1.controltovalidate = "cpBody_txt_mobile";
+cpBody_RegularExpressionValidator1.focusOnError = "t";
+cpBody_RegularExpressionValidator1.errormessage = "Invalid Mobile Number. Use 10 digit Mobile Number.";
+cpBody_RegularExpressionValidator1.display = "Dynamic";
+cpBody_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_RegularExpressionValidator1.validationexpression = "^[4-9]\\d{9}$";
+var cpBody_rev_txt_personalMail = document.all ? document.all["cpBody_rev_txt_personalMail"] : document.getElementById("cpBody_rev_txt_personalMail");
+cpBody_rev_txt_personalMail.controltovalidate = "cpBody_txt_personalMail";
+cpBody_rev_txt_personalMail.focusOnError = "t";
+cpBody_rev_txt_personalMail.errormessage = "Invalid Email Address.";
+cpBody_rev_txt_personalMail.display = "Dynamic";
+cpBody_rev_txt_personalMail.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_personalMail.validationexpression = "^[\\w\\-]+(?:\\.[\\w\\-]+)*@(?:[\\w](?:[\\w\\-]*[\\w])?\\.)+[a-zA-Z]{2,}(?:[\\w\\-]*[a-zA-Z])?$";
+var cpBody_RegularExpressionValidator2 = document.all ? document.all["cpBody_RegularExpressionValidator2"] : document.getElementById("cpBody_RegularExpressionValidator2");
+cpBody_RegularExpressionValidator2.controltovalidate = "cpBody_txt_telephoneNumber";
+cpBody_RegularExpressionValidator2.focusOnError = "t";
+cpBody_RegularExpressionValidator2.errormessage = "Invalid Pnone Number. Enter only Digits.";
+cpBody_RegularExpressionValidator2.display = "Dynamic";
+cpBody_RegularExpressionValidator2.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_RegularExpressionValidator2.validationexpression = "^\\d{10,15}$";
+var cpBody_rev_txt_postalcode = document.all ? document.all["cpBody_rev_txt_postalcode"] : document.getElementById("cpBody_rev_txt_postalcode");
+cpBody_rev_txt_postalcode.controltovalidate = "cpBody_txt_postalcode";
+cpBody_rev_txt_postalcode.focusOnError = "t";
+cpBody_rev_txt_postalcode.errormessage = "Invalid Postal Code. Use only 6 digit postal code.";
+cpBody_rev_txt_postalcode.display = "Dynamic";
+cpBody_rev_txt_postalcode.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_postalcode.validationexpression = "^\\d{6}$";
+var cpBody_rev_txt_UID = document.all ? document.all["cpBody_rev_txt_UID"] : document.getElementById("cpBody_rev_txt_UID");
+cpBody_rev_txt_UID.controltovalidate = "cpBody_txt_UID";
+cpBody_rev_txt_UID.focusOnError = "t";
+cpBody_rev_txt_UID.errormessage = "Invalid Aadhar ID. Use only 12/ 16 digit Aadhar ID/ VID.";
+cpBody_rev_txt_UID.display = "Dynamic";
+cpBody_rev_txt_UID.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_UID.validationexpression = "^\\d{12}|\\d{16}$";
+var cpBody_rfv_txt_Value = document.all ? document.all["cpBody_rfv_txt_Value"] : document.getElementById("cpBody_rfv_txt_Value");
+cpBody_rfv_txt_Value.controltovalidate = "cpBody_txt_Value";
+cpBody_rfv_txt_Value.focusOnError = "t";
+cpBody_rfv_txt_Value.errormessage = "Required Field";
+cpBody_rfv_txt_Value.display = "Dynamic";
+cpBody_rfv_txt_Value.validationGroup = "vg_SenOTP";
+cpBody_rfv_txt_Value.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txt_Value.initialvalue = "";
+var cpBody_rfv_txt_OTP = document.all ? document.all["cpBody_rfv_txt_OTP"] : document.getElementById("cpBody_rfv_txt_OTP");
+cpBody_rfv_txt_OTP.controltovalidate = "cpBody_txt_OTP";
+cpBody_rfv_txt_OTP.focusOnError = "t";
+cpBody_rfv_txt_OTP.errormessage = "OTP Required";
+cpBody_rfv_txt_OTP.display = "Dynamic";
+cpBody_rfv_txt_OTP.validationGroup = "vg_ValidateOTP";
+cpBody_rfv_txt_OTP.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txt_OTP.initialvalue = "";
+var cpBody_rfv_rbtnListMembers = document.all ? document.all["cpBody_rfv_rbtnListMembers"] : document.getElementById("cpBody_rfv_rbtnListMembers");
+cpBody_rfv_rbtnListMembers.controltovalidate = "cpBody_rbtnListMembers";
+cpBody_rfv_rbtnListMembers.display = "Dynamic";
+cpBody_rfv_rbtnListMembers.validationGroup = "vg_OTP";
+cpBody_rfv_rbtnListMembers.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_rbtnListMembers.initialvalue = "";
+var cpBody_rfv_txt_SIPFEmployeeID = document.all ? document.all["cpBody_rfv_txt_SIPFEmployeeID"] : document.getElementById("cpBody_rfv_txt_SIPFEmployeeID");
+cpBody_rfv_txt_SIPFEmployeeID.controltovalidate = "cpBody_txt_SIPFEmployeeID";
+cpBody_rfv_txt_SIPFEmployeeID.focusOnError = "t";
+cpBody_rfv_txt_SIPFEmployeeID.errormessage = "SIPF Employee ID required";
+cpBody_rfv_txt_SIPFEmployeeID.display = "Dynamic";
+cpBody_rfv_txt_SIPFEmployeeID.validationGroup = "vg_SIPF";
+cpBody_rfv_txt_SIPFEmployeeID.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txt_SIPFEmployeeID.initialvalue = "";
+var cpBody_rev_txt_SIPFEmployeeID = document.all ? document.all["cpBody_rev_txt_SIPFEmployeeID"] : document.getElementById("cpBody_rev_txt_SIPFEmployeeID");
+cpBody_rev_txt_SIPFEmployeeID.controltovalidate = "cpBody_txt_SIPFEmployeeID";
+cpBody_rev_txt_SIPFEmployeeID.focusOnError = "t";
+cpBody_rev_txt_SIPFEmployeeID.errormessage = "Invalid SIPF Number";
+cpBody_rev_txt_SIPFEmployeeID.display = "Dynamic";
+cpBody_rev_txt_SIPFEmployeeID.validationGroup = "vg_SIPF";
+cpBody_rev_txt_SIPFEmployeeID.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_SIPFEmployeeID.validationexpression = "^([A-Za-z]{4})\\d{12}$";
+var cpBody_rfv_txt_SIPFPassword = document.all ? document.all["cpBody_rfv_txt_SIPFPassword"] : document.getElementById("cpBody_rfv_txt_SIPFPassword");
+cpBody_rfv_txt_SIPFPassword.controltovalidate = "cpBody_txt_SIPFPassword";
+cpBody_rfv_txt_SIPFPassword.focusOnError = "t";
+cpBody_rfv_txt_SIPFPassword.errormessage = "SIPF Password required";
+cpBody_rfv_txt_SIPFPassword.display = "Dynamic";
+cpBody_rfv_txt_SIPFPassword.validationGroup = "vg_SIPF";
+cpBody_rfv_txt_SIPFPassword.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txt_SIPFPassword.initialvalue = "";
+var cpBody_rfv_txtEmployeeName = document.all ? document.all["cpBody_rfv_txtEmployeeName"] : document.getElementById("cpBody_rfv_txtEmployeeName");
+cpBody_rfv_txtEmployeeName.controltovalidate = "cpBody_txt_EmployeeName";
+cpBody_rfv_txtEmployeeName.focusOnError = "t";
+cpBody_rfv_txtEmployeeName.errormessage = "Employee Name is required";
+cpBody_rfv_txtEmployeeName.display = "Dynamic";
+cpBody_rfv_txtEmployeeName.validationGroup = "vg_SearchSIPF";
+cpBody_rfv_txtEmployeeName.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txtEmployeeName.initialvalue = "";
+var cpBody_rfv_txtEmployeeDOB = document.all ? document.all["cpBody_rfv_txtEmployeeDOB"] : document.getElementById("cpBody_rfv_txtEmployeeDOB");
+cpBody_rfv_txtEmployeeDOB.controltovalidate = "cpBody_txt_EmployeeDOB";
+cpBody_rfv_txtEmployeeDOB.focusOnError = "t";
+cpBody_rfv_txtEmployeeDOB.errormessage = "Employee Date of Birth required";
+cpBody_rfv_txtEmployeeDOB.display = "Dynamic";
+cpBody_rfv_txtEmployeeDOB.validationGroup = "vg_SearchSIPF";
+cpBody_rfv_txtEmployeeDOB.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+cpBody_rfv_txtEmployeeDOB.initialvalue = "";
+var cpBody_rev_txtEmployeeDOB = document.all ? document.all["cpBody_rev_txtEmployeeDOB"] : document.getElementById("cpBody_rev_txtEmployeeDOB");
+cpBody_rev_txtEmployeeDOB.controltovalidate = "cpBody_txt_EmployeeDOB";
+cpBody_rev_txtEmployeeDOB.focusOnError = "t";
+cpBody_rev_txtEmployeeDOB.errormessage = "Invalid Date of Birth";
+cpBody_rev_txtEmployeeDOB.display = "Dynamic";
+cpBody_rev_txtEmployeeDOB.validationGroup = "vg_SearchSIPF";
+cpBody_rev_txtEmployeeDOB.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txtEmployeeDOB.validationexpression = "([0-3][0-9])[/]([0-1][0-9])[/]([1-2]\\d{3})";
+var cpBody_rev_txt_EmployeeDOA = document.all ? document.all["cpBody_rev_txt_EmployeeDOA"] : document.getElementById("cpBody_rev_txt_EmployeeDOA");
+cpBody_rev_txt_EmployeeDOA.controltovalidate = "cpBody_txt_EmployeeDOA";
+cpBody_rev_txt_EmployeeDOA.focusOnError = "t";
+cpBody_rev_txt_EmployeeDOA.errormessage = "Invalid Date of Appointment";
+cpBody_rev_txt_EmployeeDOA.display = "Dynamic";
+cpBody_rev_txt_EmployeeDOA.validationGroup = "vg_SearchSIPF";
+cpBody_rev_txt_EmployeeDOA.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+cpBody_rev_txt_EmployeeDOA.validationexpression = "([0-3][0-9])[/]([0-1][0-9])[/]([1-2]\\d{3})";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+document.getElementById('cpBody_RequiredFieldValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_RequiredFieldValidator3'));
+}
+
+document.getElementById('cpBody_rfv_txt_FirstName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txt_FirstName'));
+}
+
+document.getElementById('cpBody_vldReqUsername').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_vldReqUsername'));
+}
+
+document.getElementById('cpBody_RequiredFieldValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_RequiredFieldValidator1'));
+}
+
+document.getElementById('cpBody_rev_txt_DOB').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_DOB'));
+}
+
+document.getElementById('cpBody_rfv_rbtnListGender').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_rbtnListGender'));
+}
+
+document.getElementById('cpBody_RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_RegularExpressionValidator1'));
+}
+
+document.getElementById('cpBody_rev_txt_personalMail').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_personalMail'));
+}
+
+document.getElementById('cpBody_RegularExpressionValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_RegularExpressionValidator2'));
+}
+
+document.getElementById('cpBody_rev_txt_postalcode').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_postalcode'));
+}
+
+document.getElementById('cpBody_rev_txt_UID').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_UID'));
+}
+
+document.getElementById('cpBody_rfv_txt_Value').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txt_Value'));
+}
+
+document.getElementById('cpBody_rfv_txt_OTP').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txt_OTP'));
+}
+
+document.getElementById('cpBody_rfv_rbtnListMembers').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_rbtnListMembers'));
+}
+
+document.getElementById('cpBody_rfv_txt_SIPFEmployeeID').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txt_SIPFEmployeeID'));
+}
+
+document.getElementById('cpBody_rev_txt_SIPFEmployeeID').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_SIPFEmployeeID'));
+}
+
+document.getElementById('cpBody_rfv_txt_SIPFPassword').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txt_SIPFPassword'));
+}
+
+document.getElementById('cpBody_rfv_txtEmployeeName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txtEmployeeName'));
+}
+
+document.getElementById('cpBody_rfv_txtEmployeeDOB').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rfv_txtEmployeeDOB'));
+}
+
+document.getElementById('cpBody_rev_txtEmployeeDOB').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txtEmployeeDOB'));
+}
+
+document.getElementById('cpBody_rev_txt_EmployeeDOA').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('cpBody_rev_txt_EmployeeDOA'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.UI._UpdateProgress, {"associatedUpdatePanelId":null,"displayAfter":500,"dynamicLayout":true}, null, null, $get("UpdateProgress"));
+});
+//]]>
+</script>
+</form>
+
+
+</body></html>

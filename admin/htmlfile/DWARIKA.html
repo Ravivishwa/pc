@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://evp.ecinet.in/Verification/Index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>VerificationHome</title>
+  
+
+  <link rel="icon" href="https://evp.ecinet.in/Content/images/eci-icon.ico" type="image/x-icon">
+
+  
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Custome style -->
+  <link href="./DWARIKA_files/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="./DWARIKA_files/bootstrap-flatly.min.css" rel="stylesheet">
+  <link href="./DWARIKA_files/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  
+  <link href="./DWARIKA_files/all.min.css" rel="stylesheet">
+  
+  <link href="./DWARIKA_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./DWARIKA_files/jquery-ui.min.css" rel="stylesheet">
+  <link href="./DWARIKA_files/jquery-ui.theme.min.css" rel="stylesheet">
+  <link href="./DWARIKA_files/animations.css" rel="stylesheet">
+  <link href="./DWARIKA_files/fonts.css" rel="stylesheet">
+  <link href="./DWARIKA_files/main.css" rel="stylesheet" class="color-switcher-link">
+
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+  <script src="./DWARIKA_files/jquery-2.1.4.js.download"></script>
+  
+
+  
+  
+
+
+  <style>
+    /*.form-control {
+      padding: 6px 5px !important;
+    }*/
+  </style>
+</head>
+<body>
+  <input type="hidden" id="hdnLanguageArray">
+  <div id="preloader" class="preloader" style="z-index: 8000; display: none;">
+    <div class="preloader_image"></div>
+  </div>
+
+  <div id="dvLoading2" class="lds-dual-ring" style="z-index: 7000; display: none;"></div>
+  <div class="clearfix"></div>
+
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <!--Modals start-->
+  <!--knowAcModal By Sayali-->
+
+  <div id="knowAcModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-11 text-center">
+              <h4 class="modal-title">
+                Map
+              </h4>
+            </div>
+            <div class="col-md-1 text-right">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="know_my_AC_partial"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- eof .modal -->
+  <div id="canvas">
+    <div id="box_wrapper">
+
+      <div class="page_header_wrapper header_white affix-top-wrapper" style="height: 100px;"><header class="page_header header_white toggler_right affix-top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <a href="https://evp.ecinet.in/" class="logo top_logo">
+
+                <img src="./DWARIKA_files/logo.png">
+              </a>
+            </div>
+
+            <div class="col-md-7 col-sm-12">
+
+              <!-- main nav start -->
+              <nav class="mainmenu_wrapper text-right">
+                <ul class="mainmenu sf-menu">
+                  <li class="active">
+                    <a href="https://evp.ecinet.in/">Home</a>
+                  </li>
+
+                  <li>
+                    <a href="https://evp.ecinet.in/Home/About">About Us</a>
+                  </li>
+
+                    <li class="dropdown">
+                      <a href="https://evp.ecinet.in/Verification/Index#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user-o"></i><span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        
+                        <li>
+                          <a href="https://evp.ecinet.in/Account/LogOut" id="login">Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  <!-- contacts -->
+                  <!--<li>
+                    <a href="#">Contacts</a>
+                  </li>-->
+                  <!-- eof contacts -->
+                  <!-- <li class="search hidden-xs hidden-sm"> -->
+                  <!-- <a class="search_form_trigger header-button" href="#"> -->
+                  <!-- <span> -->
+                  <!-- <i class="flaticon-magnifying-glass bold"></i> -->
+                  <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                  <!-- </span> -->
+                  <!-- </a> -->
+                  <!-- </li> -->
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        
+      </header></div>
+
+      <section class="ls section-content-min-height toppadding_10">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="active"><i class="fa fa-home"></i>
+
+        <a href="https://evp.ecinet.in/" title="EVP Home">EVP Home</a>
+         &gt; 
+
+    Verify Self Details
+</li>
+          </ul>
+        </div>
+        
+  <div class="container">
+      <div class="panel topmargin_20 panel-primary">
+          <div class="panel-body">
+
+          </div>
+      </div>
+
+          <div class="panel topmargin_20 panel-primary">
+
+
+              <div class="panel-heading text-center">
+                  <div class="panel-title">
+                      Search Detail by Epic No for verification
+                  </div>
+              </div>
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-12 col-xs-12">
+                          <div class="col-md-2 col-xs-12 col-md-offset-1 col-xs-offset-0">
+                              <label class="text-info">Epic No.&nbsp;</label><span class="star">*</span>
+                          </div>
+                          <div class="col-md-5 col-xs-12 col-sm-6">
+                              <input type="text" id="epicno" name="epicno" required="required" class="form-control" placeholder="enter epic no" autocomplete="off">
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3 text-right">
+                              <button class="btn btn-success btn-sm" type="button" id="btnGet" onclick="fetchDetailByEpic(&#39;/Verification/SearchVoters&#39;)"><i class="fa fa-search"></i> Search</button>
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3">
+                              <button class="btn btn-danger btn-sm" type="reset" id="btnRefresh"><i class="fa fa-refresh"></i> Reset</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="ListPartial">
+
+    <div class="panel panel-info">
+      <div class="panel-heading text-center">
+        <div class="panel-title">
+          Elector Details
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>State :&nbsp;</label>Rajasthan
+            </div>
+            <div class="col-md-4">
+              <label>District :&nbsp;</label>
+            </div>
+            <div class="col-md-4">
+              <label>PC :&nbsp;</label>
+            </div>
+          </div>
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>AC :&nbsp;</label>96 - Tonk
+            </div>
+            <div class="col-md-9">
+              <label>Part :&nbsp;</label>64 - MAHUA
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12" id="verifyDetailsFormDiv">
+            <div id="formDetails" class="col-md-9 col-sm-9">
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label class="">Name <span class="text-right">:</span></label>
+                    </td>
+                    <td><span>DVARIKA&nbsp; / द्वारिका </span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Relative Name<span class="text-right">:</span> </label>
+                    </td>
+                    <td><span>RAMASVARUP&nbsp; / रामस्वरूप </span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Relation Type<span class="text-right">:</span></label>
+                    </td>
+                    
+                    <td><span>Father</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Date of Birth<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Age<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>35</span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Gender<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>Female</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>PwD<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>NA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center toppadding_20">
+              <div class="form-group">
+                <img id="elector_image_v" alt="Image not available" src="data:image/jpg;base64,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" width="100" height="120" class="img-thumbnail image">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <label>House no. : &nbsp;</label>168
+            </div>
+
+            <div class="col-md-9">
+              <label>Address : &nbsp; </label>PETAROL PAMP KE PAS,MAHUA / पेट्रोल पम्प के पास,महुआ
+            </div>
+
+            <div class="">
+
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Mobile no.<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+
+                    <td align="left" class="headingCell">
+                      <label>Email Id<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="radio_v_div">
+          <div class="col-md-12 form-group">
+
+            <div class="col-md-4">
+              <input id="EvpRequestOption" name="EvpRequestOption" type="hidden" value="">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="V" id="detail_verify" class="detail_verify" name="verify-radio" disabled="">&nbsp;
+                Is information displayed above is correct.
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="C" id="detail_correction" class="detail_correction" name="verify-radio" disabled="">&nbsp; Information displayed above needs correction.
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-12">
+              <h6>
+                Verification and Authentication of this record is already completed.
+              </h6>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="PrintModal" class="modal fade">
+      <div class="modal-dialog modal-lg" style="width:85%">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-md-11 text-center">
+                <h4 class="modal-title">
+                  Print Form
+                </h4>
+              </div>
+              <div class="col-md-1 text-right">
+                <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+            </div>
+          </div>
+          <div id="PrintPartial" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("input[name='verify-radio']").val(['V']).prop('disabled', true);
+        $('label[class~="radio-inline"]').removeClass('radio-inline').addClass('font-weight-400 text-black');
+      });
+
+      function fnFetchForm8Preview(url, stateCode, refNo) {
+        if (url == null || stateCode == null || refNo == null || url == '' || stateCode == '' || refNo == '') {
+          showErrorToast("Unable to show print preview");
+          return false;
+        }
+        showProgress();
+        url = url + "?stateCode=" + stateCode + "&refNo=" + refNo;
+        $.ajax({
+          type: "GET",
+          url: url
+        }).done(function (partialView) {
+          hideProgress();
+          $('#PrintPartial').html(partialView);
+          $('#PrintModal').modal('show');
+        }).fail(function (jqXhr, status, error) {
+          hideProgress();
+          showErrorToast("Error while showing form details..");
+        });
+
+      }
+
+
+    </script>
+</div>
+          <input type="hidden" id="verificationType" value="V">
+      </div>
+
+      </section>
+
+      <footer class="page_footer ds columns_padding_25">
+        <div class="container-fluid toppadding_20">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="widget widget_text bottommargin_10">
+                <a href="https://evp.ecinet.in/Home/Index" class="logo top_logo small_logo 0">
+
+                  <span class="logo_text">
+                    <span class="site-name black">
+                      <span class="highlight">Contact</span> Us
+                    </span>
+                  </span>
+                </a>
+                <p class="bottommargin_0">
+                  For details of eligibility criteria or any other additional information related to electoral forms,
+                  kindly visit <a href="https://eci.gov.in/"><b class="link animate">https://eci.gov.in</b></a>
+                </p>
+                <p class="bottommargin_0">
+                  For any other technical feedback or issues on the portal kindly send your feedback to
+                  
+                  <a href="mailto:ecitechsupport@eci.gov.in?Help%20Desk" target="_top">
+                    <b class="techlink animate">ECI Technical Support</b>
+                  </a>
+                </p>
+                <div>
+
+                  <div class="media small-teaser">
+                    <div class="media-left">
+                      <i class="flaticon-phone-call highlight"></i>
+                    </div>
+                    <div class="media-body">
+                      Toll free Number :1800111950
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="widget widget_popular">
+
+                <span class="logo_text logo">
+                  <span class="site-name black">
+                    <span class="highlight">Other</span> Links
+                  </span>
+                </span>
+                <ul class="media-list">
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://eci.gov.in/" target="_blank">
+                          Election Commission of India
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://evp.ecinet.in/Verification/Index#">
+                          Chief Electoral Officer
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="ds page_copyright section_padding_15 with_top_border_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center text-white">
+              <p>National Voter's Service Portal © Copyright 2019. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!--Fixed section on the layout page-->
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  <!-- jquery-ui -->
+  <script src="./DWARIKA_files/jquery-ui.min.js.download" type="text/javascript"></script>
+
+  <script src="./DWARIKA_files/compressed.js.download"></script>
+  <script src="./DWARIKA_files/main.js.download"></script>
+
+  <!--Toaster-->
+  <link href="./DWARIKA_files/jquery.toast.min.css" rel="stylesheet">
+  <script src="./DWARIKA_files/jquery.toast.min.js.download"></script>
+  <script src="./DWARIKA_files/toasterNotifications.js.download"></script>
+  <script src="./DWARIKA_files/bootstrap.min.js.download"></script>
+  <script src="./DWARIKA_files/jquery.bootpag.min.js.download"></script>
+  
+  <script src="./DWARIKA_files/jquery.validate.min.js.download"></script>
+  <script src="./DWARIKA_files/jquery.validate.unobtrusive.min.js.download"></script>
+  <script src="./DWARIKA_files/jquery.unobtrusive-ajax.min.js.download"></script>
+  <script src="./DWARIKA_files/jquery-ui.min.js(1).download"></script>
+
+  <script src="./DWARIKA_files/ui.js.download"></script>
+  <script>
+
+      $(document).ready(function(){
+          $('#divUpdate').hide();
+          var VFC_BLOFlagValue = 'False';
+          if(VFC_BLOFlagValue=='True')
+              $('#chkVFCBLOGFlag_BLO').prop("checked",true);
+          else
+              $('#chkVFCBLOGFlag_Citizen').prop("checked",true);
+
+      $('#btnRefresh').on("click",function(){
+          $('#epicno').val('');
+        return false;
+      });
+    });
+
+    function fetchDetailByEpic(url) {
+
+      var epic_no = $('#epicno').val();
+      if (epic_no == null || typeof epic_no == 'undefined' || epic_no == '') {
+        //epic_no = $("#ObjectorEpicNo").val();
+        showErrorToast("Epic No is not valid...!!");
+        return false;
+      }
+      url = url + '?epic_no=' + epic_no;
+      selectedRow = 0;
+      showProgress();
+      $('#btnGet').prop('disabled',true);
+      $.ajax({
+        type: "GET",
+        url: url
+      }).done(function (partialView) {
+        $('#ListPartial').empty().html(partialView).show();
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      }).fail(function (jqXhr, errorStatus, error) {
+        showErrorToast("Something went wrong, try after sometime");
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      });
+    }
+
+    function fnEditVFC_BLOFlag(){
+        debugger;
+        $('#chkVFCBLOGFlag_BLO').removeAttr('disabled');
+        $('#chkVFCBLOGFlag_Citizen').removeAttr('disabled');
+        $('#divEdit').hide();
+        $('#divUpdate').show();
+    }
+
+    function fnSetVFC_BLOFlag(url) {
+        var radioValue = $("input[name='chkVFCBLOGFlag']:checked").val();
+        var VFC_BLOFlag= false;
+        if(radioValue==="BLO"){
+            VFC_BLOFlag=true;
+        }
+        url = url + '?VFC_BLOFlag=' + VFC_BLOFlag;
+
+        $.ajax({
+            type: "GET",
+            url: url
+        }).done(function (partialView) {
+            hideProgress();
+            $('#chkVFCBLOGFlag_BLO').attr('disabled', true);
+            $('#chkVFCBLOGFlag_Citizen').attr('disabled', true);
+            $('#divEdit').show();
+            $('#divUpdate').hide();
+        }).fail(function (jqXhr, errorStatus, error) {
+            showErrorToast("Something went wrong, try after sometime");
+            hideProgress();
+        });
+    }
+  </script>
+
+
+  <script type="text/javascript">
+    $(".Datevalidate").change(function () {
+      var dateInput = $(this).val();
+      if (dateInput.length == 10) {
+        var dateReg = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{4})$/;
+        var data = dateInput.match(dateReg)
+        if (!data) {
+          showWarningToast('Please enter valid date.');
+          $(this).val('');
+        }
+      }
+      else {
+        showWarningToast('Please enter valid date.');
+        $(this).val('');
+      }
+    });
+
+    $('#btnIncFont').click(function () {
+      //
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "18px")    /*New code to fix the bug of increase font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) + 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    //$('#btnOk').click(function () {
+
+    //  $('#knowAcModal').hide();
+    //});
+
+    $('#btnDecFont').click(function () {
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "10px")  /*New code to fix the bug of decrease font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) - 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    function scrollToDiv(divId) {
+      $('html, body').animate({
+        scrollTop: $("#" + divId).offset().top - 105
+      }, 1000);
+    }
+
+    function print(divId) {
+      
+      var divToPrint = document.getElementById(divId);
+
+      var display_setting = "toolbar=yes,location=no,directories=yes,menubar=yes,";
+      display_setting += "scrollbars=yes,width=750, height=600";
+      var newWin = window.open('', 'Print-Window', display_setting);
+      newWin.document.open();
+      newWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
+
+      newWin.document.close();
+
+    }
+
+    // for pagination
+
+    function initPagination(paginationCallbackFunc, url, totalRecords) {
+      debugger;
+      var pageSize = 10;
+      if (totalRecords > pageSize) {
+        var total = Math.floor(totalRecords / pageSize);
+        if ((totalRecords % 10) > 0) {
+          total = total + 1;
+        }
+        if (total > 1) {
+          loadNextPage(paginationCallbackFunc, url);
+          $('#PaginationDiv').bootpag({
+            total: total,
+            maxVisible: 10,
+            prev: 'Prev',
+            next: 'Next',
+            leaps: true,
+            firstLastUse: true,
+            first: 'First',
+            last: 'Last'
+          });
+        }
+        $('#PaginationDiv').show();
+      }
+      else {
+
+        $('#PaginationDiv').hide();
+      }
+    }
+
+    // To load next selected form list page
+    function loadNextPage(callbackFunction, url) {
+
+      $('#PaginationDiv').unbind("page");
+      $('#PaginationDiv').on("page", function (event, pageNumber) {
+        callbackFunction(url, pageNumber);
+      });
+    }
+
+    
+  </script>
+
+<a href="https://evp.ecinet.in/Verification/Index#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a><div class="jq-toast-wrap bottom-left" role="alert" aria-live="polite" style="left: 672px; top: 20px;"><div class="jq-toast-single jq-has-icon jq-icon-error" style="text-align: center; display: none;"><span class="jq-toast-loader jq-toast-loaded" style="-webkit-transition: width 4.6s ease-in;                       -o-transition: width 4.6s ease-in;                       transition: width 4.6s ease-in;                       background-color: #9EC600;"></span><span class="close-jq-toast-single">×</span><h2 class="jq-toast-heading">Error</h2>Something went wrong, try after sometime</div></div></body></html>

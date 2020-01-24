@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://www.nvsp.in/Verification -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Home Page</title>
+    
+
+  <link rel="icon" href="https://www.nvsp.in/Content/images/eci-icon.ico" type="image/x-icon">
+
+  
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Custome style -->
+  <link href="./ram kori_files/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="./ram kori_files/bootstrap-flatly.min.css" rel="stylesheet">
+  <link href="./ram kori_files/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  
+  <link href="./ram kori_files/all.min.css" rel="stylesheet">
+  
+  <link href="./ram kori_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <link href="./ram kori_files/animations.css" rel="stylesheet">
+  <link href="./ram kori_files/fonts.css" rel="stylesheet">
+  <link href="./ram kori_files/main.css" rel="stylesheet" class="color-switcher-link">
+    <script src="./ram kori_files/jquery-2.1.4.js.download"></script>
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+  
+  
+
+  
+
+
+  <style>
+    /*.form-control {
+      padding: 6px 5px !important;
+    }*/
+  </style>
+</head>
+<body>
+  <input type="hidden" id="hdnLanguageArray">
+  <div id="preloader" class="preloader" style="z-index: 8000; display: none;">
+    <div class="preloader_image"></div>
+  </div>
+
+  <div id="dvLoading2" class="lds-dual-ring" style="z-index: 7000; display: none;"></div>
+  <div class="clearfix"></div>
+
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <!--Modals start-->
+  <!--knowAcModal By Sayali-->
+
+  <div id="knowAcModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-11 text-center">
+              <h4 class="modal-title">
+                Map
+              </h4>
+            </div>
+            <div class="col-md-1 text-right">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="know_my_AC_partial"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- eof .modal -->
+  <div id="canvas">
+    <div id="box_wrapper">
+
+      <!-- top left sections -->
+      
+
+      <div class="page_header_wrapper header_white affix-wrapper" style="height: 100px;"><header class="page_header header_white toggler_right affix">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <a href="https://www.nvsp.in/" class="logo top_logo">
+
+                <img src="./ram kori_files/logo.png">
+              </a>
+            </div>
+
+            <div class="col-md-7 col-sm-12">
+
+              <!-- main nav start -->
+              <nav class="mainmenu_wrapper text-right">
+                <ul class="mainmenu sf-menu">
+                  <li class="active">
+                    <a href="https://www.nvsp.in/">Home</a>
+                  </li>
+
+                  <li>
+                    <a href="https://www.nvsp.in/Home/About">About Us</a>
+                  </li>
+
+                  <li class="dropdown">
+                    <a href="https://www.nvsp.in/Verification#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Services<span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="https://www.nvsp.in/Home/UserIndex">Elector Verification Program</a></li>
+                      
+                      <li><a href="https://www.nvsp.in/Forms/trackstatus">Track status</a></li>
+                      <li><a href="https://www.nvsp.in/RegisteredUser/GetFamilyIndexVeiw">Family Tagging</a></li>
+                      
+                    </ul>
+                  </li>
+                    <li>                      
+                      <a href="https://www.nvsp.in/Home/Dashboard">Dashboard</a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="https://www.nvsp.in/Verification#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user-o"></i><span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="https://www.nvsp.in/Account/MyProfile">My Profile</a></li>
+                        <li>
+                          <a href="https://www.nvsp.in/Account/LogOut" id="login">Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  <!-- contacts -->
+                  <!--<li>
+                    <a href="#">Contacts</a>
+                  </li>-->
+                  <!-- eof contacts -->
+                  <!-- <li class="search hidden-xs hidden-sm"> -->
+                  <!-- <a class="search_form_trigger header-button" href="#"> -->
+                  <!-- <span> -->
+                  <!-- <i class="flaticon-magnifying-glass bold"></i> -->
+                  <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                  <!-- </span> -->
+                  <!-- </a> -->
+                  <!-- </li> -->
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        
+      </header></div>
+
+        
+
+      <section class="ls section-content-min-height toppadding_10">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="active"><i class="fa fa-home"></i>
+
+        <a href="https://www.nvsp.in/" title="Home">Home</a>
+         &gt; 
+
+        <a href="https://www.nvsp.in/Home/UserIndex" title="EVP Home">EVP Home</a>
+         &gt; 
+
+    Verify Self Details
+</li>
+          </ul>
+        </div>
+        
+  <div class="container padding_40">
+    <div>
+
+      
+      <div id="dvLoading" class="loader"> </div>
+
+      <div id="" class="">
+
+        <div class="panel panel-primary no-border-radius">
+          <div class="panel-heading">
+            <div class="panel-title text-center">
+              <span>My Details</span>
+            </div>
+          </div>
+          <div class="panel-body">
+            
+            <table class="table table-bordered table-condensed table-striped table-th-center">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Relative Name</th>
+                  <th>Age</th>
+                  <th>Gender</th>
+                  <th>Verification &amp; Authentication Status</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>RAM KORI&nbsp; <br> राम कोरी </td>
+                  <td>RAM KARAN&nbsp; <br> राम करण </td>
+                  <td class="text-center">50</td>
+                  <td>Female</td>
+                  <td id="verifyStatTd">FIELD_VERIFIED</td>
+                  <td class="text-center">
+                      <button class="btn btn-success btn-sm" type="button" onclick="fetchDetailByEpic(&#39;/Verification/SearchVoters&#39;,&#39;HMR1694835&#39;)" id="selfVerifyBtn">View Details</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+          
+      </div>
+
+
+    </div>
+
+    <div id="VerificationModal" class="modal fade">
+      <div class="modal-dialog modal-md" style="left:-15%; bottom:-5%">
+        <!-- Modal content-->
+        <div class="modal-content" style="width: 180%;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+            <h4 class="modal-title">Voter Verification</h4>
+          </div>
+          <div id="VerificationPartial" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ListPartial">
+
+  <div class="panel panel-info">
+    <div class="panel-heading text-center">
+      <div class="panel-title">
+        Elector Details
+      </div>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <div class="col-md-3">
+            <label>State :&nbsp;</label>Rajasthan
+          </div>
+          <div class="col-md-4">
+            <label>District :&nbsp;</label>
+          </div>
+          <div class="col-md-4">
+            <label>PC :&nbsp;</label>
+          </div>
+        </div>
+        <div class="col-md-12 form-group">
+          <div class="col-md-3">
+            <label>AC :&nbsp;</label>21 - Sardarshahar
+          </div>
+          <div class="col-md-9">
+            <label>Part :&nbsp;</label>42 - GOVT. ADARSH SENIOR SECONDARY SCHOOL (RIGHT PART) SONPALSAR
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12" id="verifyDetailsFormDiv">
+          <div id="formDetails" class="col-md-9 col-sm-9">
+            <table class="table table-condensed table-hover table-striped bottommargin_10">
+              <tbody>
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label class="">Name <span class="text-right">:</span></label>
+                  </td>
+                  <td><span>RAM KORI&nbsp; / राम कोरी </span></td>
+                  
+                </tr>
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>Relative Name<span class="text-right">:</span> </label>
+                  </td>
+                  <td><span>RAM KARAN&nbsp; / राम करण </span></td>
+                  
+                </tr>
+
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>Relation Type<span class="text-right">:</span></label>
+                  </td>
+                  <td><span>Husband</span></td>
+                  
+                </tr>
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>Date of Birth<span class="text-right">:</span></label>
+                  </td>
+                  <td><span></span></td>
+                  
+                </tr>
+
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>Age<span class="text-right">:</span></label>
+                  </td>
+                  <td><span>50</span></td>
+                  
+                </tr>
+
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>Gender<span class="text-right">:</span></label>
+                  </td>
+                  <td><span>Female</span></td>
+                </tr>
+                <tr>
+                  <td align="left" class="headingCell">
+                    <label>PwD<span class="text-right">:</span></label>
+                  </td>
+                  <td><span>NA</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-3 col-sm-3 text-center toppadding_20">
+            <div class="form-group">
+              <img id="elector_image_v" alt="Image not available" src="data:image/jpg;base64,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" width="100" height="120" class="img-thumbnail image">
+            </div>
+            
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-3">
+            <label>House no. : &nbsp;</label>133
+          </div>
+         
+          <div class="col-md-9">
+            <label>Address :&nbsp; </label>MEGHWALON KA BAS ,SONAPALASAR  / मेघवालों का बास,सोनपालसर
+            
+          </div>
+         
+          
+        </div>
+      </div>
+
+      <div class="row" id="radio_v_div">
+        <div class="col-md-12 form-group">
+
+          <div class="col-md-4">
+            <input id="EvpRequestOption" name="EvpRequestOption" type="hidden" value="">
+            <label class="font-weight-400 text-black">
+              <input type="radio" value="V" id="detail_verify" class="detail_verify" name="verify-radio" disabled="">&nbsp;
+              Is information displayed above is correct.
+            </label>
+          </div>
+          <div class="col-md-4">
+            <label class="font-weight-400 text-black">
+              <input type="radio" value="C" id="detail_correction" class="detail_correction" name="verify-radio" disabled="">&nbsp; Information displayed above needs correction.
+            </label>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <h6>
+              Verification and Authentication of this record is already completed.
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="PrintModal" class="modal fade">
+    <div class="modal-dialog modal-lg" style="width:85%">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-11 text-center">
+              <h4 class="modal-title">
+                Print Form
+              </h4>
+            </div>
+            <div class="col-md-1 text-right">
+              <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+          </div>
+        </div>
+        <div id="PrintPartial" class="modal-body">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $(document).ready(function () {
+      $("input[name='verify-radio']").val(['V']).prop('disabled', true);
+      $('label[class~="radio-inline"]').removeClass('radio-inline').addClass('font-weight-400 text-black');
+    });
+
+    function fnFetchForm8Preview(url, stateCode, refNo) {
+      if (url == null || stateCode == null || refNo == null || url == '' || stateCode == '' || refNo == '') {
+        showErrorToast("Unable to show print preview");
+        return false;
+      }
+      showProgress();
+      url = url + "?stateCode=" + stateCode + "&refNo=" + refNo;
+      $.ajax({
+        type: "GET",
+        url: url
+      }).done(function (partialView) {
+        hideProgress();
+        $('#PrintPartial').html(partialView);
+        $('#PrintModal').modal('show');
+      }).fail(function (jqXhr, status, error) {
+        hideProgress();
+        showErrorToast("Error while showing form details..");
+      });
+
+    }
+  </script>
+</div>
+
+          <div class="col-md-12">
+              <h5>
+                  You have completed your Verification process.
+                  <label>For providing Polling station suggestions</label>
+                  <a href="https://www.nvsp.in/RegisteredUser/PS_Suggestion">Click here</a>
+              </h5>
+          </div>
+    <input type="hidden" id="verificationType" value="V">
+  </div>
+
+
+      </section>
+
+      <footer class="page_footer ds columns_padding_25">
+        <div class="container-fluid toppadding_20">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="widget widget_text bottommargin_10">
+                <a href="https://www.nvsp.in/" class="logo top_logo small_logo 0">
+
+                  <span class="logo_text">
+                    <span class="site-name black">
+                      <span class="highlight">Contact</span> Us
+                    </span>
+                  </span>
+                </a>
+                <p class="bottommargin_0">
+                  For details of eligibility criteria or any other additional information related to electoral forms,
+                  kindly visit <a href="https://eci.gov.in/"><b class="link animate">https://eci.gov.in</b></a>
+                </p>
+                <p class="bottommargin_0">
+                  For any other technical feedback or issues on the portal kindly send your feedback to
+                  
+                  <a href="mailto:ecitechsupport@eci.gov.in?Help%20Desk" target="_top">
+                    <b class="techlink animate">ECI Technical Support</b>
+                  </a>
+                </p>
+                <div>
+
+                  <div class="media small-teaser">
+                    <div class="media-left">
+                      <i class="flaticon-phone-call highlight"></i>
+                    </div>
+                    <div class="media-body">
+                      Toll free Number :1800111950
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="widget widget_popular">
+
+                <span class="logo_text logo">
+                  <span class="site-name black">
+                    <span class="highlight">Other</span> Links
+                  </span>
+                </span>
+                <ul class="media-list">
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="http://results.eci.gov.in/" target="_blank">
+                          Election Commission of India
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://www.nvsp.in/Verification#">
+                          Chief Electoral Officer
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="ds page_copyright section_padding_15 with_top_border_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center text-white">
+              <p>National Voter's Service Portal © Copyright 2019. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!--Fixed section on the layout page-->
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  <!-- jquery-ui -->
+  <script src="./ram kori_files/jquery-ui.min.js.download" type="text/javascript"></script>
+
+  <script src="./ram kori_files/compressed.js.download"></script>
+  <script src="./ram kori_files/main.js.download"></script>
+  
+    <script src="./ram kori_files/jquery_1.19.1-validate.js.download"></script>
+
+  <!--Toaster-->
+  <link href="./ram kori_files/jquery.toast.min.css" rel="stylesheet">
+  <script src="./ram kori_files/jquery.toast.min.js.download"></script>
+  <script src="./ram kori_files/toasterNotifications.js.download"></script>
+  <script src="./ram kori_files/bootstrap.min.js.download"></script>
+  
+
+  <script src="./ram kori_files/jquery.validate.min.js.download"></script>
+  <script src="./ram kori_files/jquery.validate.unobtrusive.min.js.download"></script>
+  <script src="./ram kori_files/jquery.unobtrusive-ajax.min.js.download"></script>
+  <script src="./ram kori_files/jquery-ui.min.js(1).download"></script>
+
+  <script src="./ram kori_files/ui.js.download"></script>
+  <script>
+    //for checking browser enables popup
+    //var isPopupAllowed = false;
+    //function checkPopAllowed() {
+
+    //  isPopupAllowed = false;
+    //  var r = window.open("", "_blank");
+    //  if (r != null && typeof r != 'undefined') {
+    //    r.close();
+    //    isPopupAllowed = true;
+    //  } else {
+    //    //Broswer has blocked it
+    //    isPopupAllowed = false;
+    //    alert('Please allow popups for this site');
+    //  }
+    //}
+
+    //$(document).ready(function () {
+    //  //checkPopAllowed();
+    //})
+
+    var isSelfVerification = true;;
+    function resetVerifyView(selfVerify) {
+      isSelfVerification = selfVerify;
+      $('#ListPartial').hide();
+    }
+
+    var selectedRow = 0; // for family members row
+    function fetchDetailByEpic(url, epic, rowNumber) {
+
+      var epic_no = epic;
+      if (epic == null || typeof epic == 'undefined' || epic == '') {
+        //epic_no = $("#ObjectorEpicNo").val();
+        showErrorToast("Epic No is not valid...!!");
+        return false;
+      }
+      url = url + '?epic_no=' + epic_no;
+      selectedRow = 0;
+      showProgress();
+      $.ajax({
+        type: "GET",
+        url: url
+      }).done(function (partialView) {
+        $('#ListPartial').empty().html(partialView).show();
+        if (!isSelfVerification) {
+          selectedRow = rowNumber;
+        }
+        hideProgress();
+      }).fail(function (jqXhr, errorStatus, error) {
+        showErrorToast("Something went wrong, try after sometime");
+        hideProgress();
+      });
+    }
+  </script>
+
+
+
+  <script type="text/javascript">
+    $(".Datevalidate").change(function () {
+      var dateInput = $(this).val();
+      if (dateInput.length == 10) {
+        var dateReg = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{4})$/;
+        var data = dateInput.match(dateReg)
+        if (!data) {
+          showWarningToast('Please enter valid date.');
+          $(this).val('');
+        }
+      }
+      else {
+        showWarningToast('Please enter valid date.');
+        $(this).val('');
+      }
+    });
+
+    $('#btnIncFont').click(function () {
+      //
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "18px")    /*New code to fix the bug of increase font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) + 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    //$('#btnOk').click(function () {
+
+    //  $('#knowAcModal').hide();
+    //});
+
+    $('#btnDecFont').click(function () {
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "10px")  /*New code to fix the bug of decrease font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) - 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+  </script>
+
+<a href="https://www.nvsp.in/Verification#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;" src="./ram kori_files/saved_resource.html"></iframe><div id="GOOGLE_INPUT_CHEXT_FLAG" input="en-t-k0-und" input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}" style="display: none;"></div><iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; box-sizing: content-box; width: 517px; height: 211px; box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 16px 0px; z-index: 2147483644; margin: 0px; position: fixed; display: none; left: 841px; top: 444px;" src="./ram kori_files/saved_resource(1).html"></iframe></body></html>

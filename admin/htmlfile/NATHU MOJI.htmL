@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+  <title>VerificationHome</title>
+  
+
+  <link rel="icon" href="https://evp.ecinet.in/Content/images/eci-icon.ico" type="image/x-icon">
+
+  <meta charset="utf-8">
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Custome style -->
+  <link href="NATHU%20MOJI_files/bootstrap.css" rel="stylesheet">
+  
+  <link href="NATHU%20MOJI_files/bootstrap-flatly.css" rel="stylesheet">
+  <link href="NATHU%20MOJI_files/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  
+  <link href="NATHU%20MOJI_files/all.css" rel="stylesheet">
+  
+  <link href="NATHU%20MOJI_files/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="NATHU%20MOJI_files/jquery-ui.css" rel="stylesheet">
+  <link href="NATHU%20MOJI_files/jquery-ui_002.css" rel="stylesheet">
+  <link href="NATHU%20MOJI_files/animations.css" rel="stylesheet">
+  <link href="NATHU%20MOJI_files/fonts.css" rel="stylesheet">
+  <link href="NATHU%20MOJI_files/main.css" rel="stylesheet" class="color-switcher-link">
+
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+  <script src="NATHU%20MOJI_files/jquery-2.js"></script>
+  
+
+  
+  
+
+
+  <style>
+    /*.form-control {
+      padding: 6px 5px !important;
+    }*/
+  </style>
+</head>
+<body>
+  <input type="hidden" id="hdnLanguageArray">
+  <div id="preloader" class="preloader" style="z-index: 8000; display: none;">
+    <div class="preloader_image"></div>
+  </div>
+
+  <div id="dvLoading2" class="lds-dual-ring" style="z-index: 7000; display: none;"></div>
+  <div class="clearfix"></div>
+
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <!--Modals start-->
+  <!--knowAcModal By Sayali-->
+
+  <div id="knowAcModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-11 text-center">
+              <h4 class="modal-title">
+                Map
+              </h4>
+            </div>
+            <div class="col-md-1 text-right">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="know_my_AC_partial"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- eof .modal -->
+  <div id="canvas">
+    <div id="box_wrapper">
+
+      <div class="page_header_wrapper header_white affix-wrapper" style="height: 100px;"><header class="page_header header_white toggler_right affix">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <a href="https://evp.ecinet.in/" class="logo top_logo">
+
+                <img src="NATHU%20MOJI_files/logo.png">
+              </a>
+            </div>
+
+            <div class="col-md-7 col-sm-12">
+
+              <!-- main nav start -->
+              <nav class="mainmenu_wrapper text-right">
+                <ul class="mainmenu sf-menu">
+                  <li class="active">
+                    <a href="https://evp.ecinet.in/">Home</a>
+                  </li>
+
+                  <li>
+                    <a href="https://evp.ecinet.in/Home/About">About Us</a>
+                  </li>
+
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user-o"></i><span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        
+                        <li>
+                          <a href="https://evp.ecinet.in/Account/LogOut" id="login">Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  <!-- contacts -->
+                  <!--<li>
+                    <a href="#">Contacts</a>
+                  </li>-->
+                  <!-- eof contacts -->
+                  <!-- <li class="search hidden-xs hidden-sm"> -->
+                  <!-- <a class="search_form_trigger header-button" href="#"> -->
+                  <!-- <span> -->
+                  <!-- <i class="flaticon-magnifying-glass bold"></i> -->
+                  <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                  <!-- </span> -->
+                  <!-- </a> -->
+                  <!-- </li> -->
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        
+      </header></div>
+
+      <section class="ls section-content-min-height toppadding_10">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="active"><i class="fa fa-home"></i>
+
+        <a href="https://evp.ecinet.in/" title="EVP Home">EVP Home</a>
+         &gt; 
+
+    Verify Self Details
+</li>
+          </ul>
+        </div>
+        
+  <div class="container">
+      <div class="panel topmargin_20 panel-primary">
+          <div class="panel-body">
+
+          </div>
+      </div>
+
+          <div class="panel topmargin_20 panel-primary">
+
+
+              <div class="panel-heading text-center">
+                  <div class="panel-title">
+                      Search Detail by Epic No for verification
+                  </div>
+              </div>
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-12 col-xs-12">
+                          <div class="col-md-2 col-xs-12 col-md-offset-1 col-xs-offset-0">
+                              <label class="text-info">Epic No.&nbsp;</label><span class="star">*</span>
+                          </div>
+                          <div class="col-md-5 col-xs-12 col-sm-6">
+                              <input type="text" id="epicno" name="epicno" required="required" class="form-control" placeholder="enter epic no" autocomplete="off" value="XVE0153296">
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3 text-right">
+                              <button class="btn btn-success btn-sm" type="button" id="btnGet" onclick="fetchDetailByEpic('/Verification/SearchVoters')"><i class="fa fa-search"></i> Search</button>
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3">
+                              <button class="btn btn-danger btn-sm" type="reset" id="btnRefresh"><i class="fa fa-refresh"></i> Reset</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="ListPartial">
+
+    <div class="panel panel-info">
+      <div class="panel-heading text-center">
+        <div class="panel-title">
+          Elector Details
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>State :&nbsp;</label>Rajasthan
+            </div>
+            <div class="col-md-4">
+              <label>District :&nbsp;</label>
+            </div>
+            <div class="col-md-4">
+              <label>PC :&nbsp;</label>
+            </div>
+          </div>
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>AC :&nbsp;</label>166 - Kushalgarh
+            </div>
+            <div class="col-md-9">
+              <label>Part :&nbsp;</label>162 - KOIDOBAN
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12" id="verifyDetailsFormDiv">
+            <div id="formDetails" class="col-md-9 col-sm-9">
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label class="">Name <span class="text-right">:</span></label>
+                    </td>
+                    <td><span>NATHU&nbsp; / नाथू </span></td>
+                  </tr>
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Relative Name<span class="text-right">:</span> </label>
+                    </td>
+                    <td><span>MAUJI&nbsp; / मौजी </span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Relation Type<span class="text-right">:</span></label>
+                    </td>
+                    
+                    <td><span>Father</span></td>
+                  </tr>
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Date of Birth<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Age<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>29</span></td>
+                  </tr>
+
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Gender<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>Male</span></td>
+                  </tr>
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>PwD<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>NA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center toppadding_20">
+              <div class="form-group">
+                <img id="elector_image_v" alt="Image not available" src="data:image/jpg;base64,/9j/4AAQSkZJRgABAgEAYABgAAD/7Q16UGhvdG9zaG9wIDMuMAA4QklNA+0AAAAAABAAYAAAAAEAAQBgAAAAAQABOEJJTQQNAAAAAAAEAAAAeDhCSU0D8wAAAAAACAAAAAAAAAAAOEJJTQQKAAAAAAABAAA4QklNJxAAAAAAAAoAAQAAAAAAAAACOEJJTQP1AAAAAABIAC9mZgABAGxmZgAGAAAAAAABAC9mZgABAKGZmgAGAAAAAAABADIAAAABAFoAAAAGAAAAAAABADUAAAABAC0AAAAGAAAAAAABOEJJTQP4AAAAAABwAAD/////////////////////////////A+gAAAAA/////////////////////////////wPoAAAAAP////////////////////////////8D6AAAAAD/////////////////////////////A+gAADhCSU0ECAAAAAAAEAAAAAEAAAJAAAACQAAAAAA4QklNBBQAAAAAAAQAAAABOEJJTQQMAAAAAAvqAAAAAQAAAF0AAABwAAABGAAAeoAAAAvOABgAAf/Y/+AAEEpGSUYAAQIBAEgASAAA/+4ADkFkb2JlAGSAAAAAAf/bAIQADAgICAkIDAkJDBELCgsRFQ8MDA8VGBMTFRMTGBEMDAwMDAwRDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAENCwsNDg0QDg4QFA4ODhQUDg4ODhQRDAwMDAwREQwMDAwMDBEMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAcABdAwEiAAIRAQMRAf/dAAQABv/EAT8AAAEFAQEBAQEBAAAAAAAAAAMAAQIEBQYHCAkKCwEAAQUBAQEBAQEAAAAAAAAAAQACAwQFBgcICQoLEAABBAEDAgQCBQcGCAUDDDMBAAIRAwQhEjEFQVFhEyJxgTIGFJGhsUIjJBVSwWIzNHKC0UMHJZJT8OHxY3M1FqKygyZEk1RkRcKjdDYX0lXiZfKzhMPTdePzRieUpIW0lcTU5PSltcXV5fVWZnaGlqa2xtbm9jdHV2d3h5ent8fX5/cRAAICAQIEBAMEBQYHBwYFNQEAAhEDITESBEFRYXEiEwUygZEUobFCI8FS0fAzJGLhcoKSQ1MVY3M08SUGFqKygwcmNcLSRJNUoxdkRVU2dGXi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" class="img-thumbnail image" width="100" height="120">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <label>House no. : &nbsp;</label>43
+            </div>
+
+            <div class="col-md-9">
+              <label>Address : &nbsp; </label>KAONCHALA,KAONCHALA / कॉंचला,कॉंचला
+            </div>
+
+            <div class="">
+
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+
+                  <tr>
+                    <td class="headingCell" align="left">
+                      <label>Mobile no.<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+
+                    <td class="headingCell" align="left">
+                      <label>Email Id<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="radio_v_div">
+          <div class="col-md-12 form-group">
+
+            <div class="col-md-4">
+              <input id="EvpRequestOption" name="EvpRequestOption" type="hidden" value="">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="V" id="detail_verify" class="detail_verify" name="verify-radio" disabled="disabled" checked="checked">&nbsp;
+                Is information displayed above is correct.
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="C" id="detail_correction" class="detail_correction" name="verify-radio" disabled="disabled">&nbsp; Information displayed above needs correction.
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-12">
+              <h6>
+                Verification and Authentication of this record is already completed.
+              </h6>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="PrintModal" class="modal fade">
+      <div class="modal-dialog modal-lg" style="width:85%">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-md-11 text-center">
+                <h4 class="modal-title">
+                  Print Form
+                </h4>
+              </div>
+              <div class="col-md-1 text-right">
+                <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+            </div>
+          </div>
+          <div id="PrintPartial" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("input[name='verify-radio']").val(['V']).prop('disabled', true);
+        $('label[class~="radio-inline"]').removeClass('radio-inline').addClass('font-weight-400 text-black');
+      });
+
+      function fnFetchForm8Preview(url, stateCode, refNo) {
+        if (url == null || stateCode == null || refNo == null || url == '' || stateCode == '' || refNo == '') {
+          showErrorToast("Unable to show print preview");
+          return false;
+        }
+        showProgress();
+        url = url + "?stateCode=" + stateCode + "&refNo=" + refNo;
+        $.ajax({
+          type: "GET",
+          url: url
+        }).done(function (partialView) {
+          hideProgress();
+          $('#PrintPartial').html(partialView);
+          $('#PrintModal').modal('show');
+        }).fail(function (jqXhr, status, error) {
+          hideProgress();
+          showErrorToast("Error while showing form details..");
+        });
+
+      }
+
+
+    </script>
+</div>
+          <input type="hidden" id="verificationType" value="V">
+      </div>
+
+      </section>
+
+      <footer class="page_footer ds columns_padding_25">
+        <div class="container-fluid toppadding_20">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="widget widget_text bottommargin_10">
+                <a href="https://evp.ecinet.in/Home/Index" class="logo top_logo small_logo 0">
+
+                  <span class="logo_text">
+                    <span class="site-name black">
+                      <span class="highlight">Contact</span> Us
+                    </span>
+                  </span>
+                </a>
+                <p class="bottommargin_0">
+                  For details of eligibility criteria or any other additional information related to electoral forms,
+                  kindly visit <a href="https://eci.gov.in/"><b class="link animate">https://eci.gov.in</b></a>
+                </p>
+                <p class="bottommargin_0">
+                  For any other technical feedback or issues on the portal kindly send your feedback to
+                  
+                  <a href="mailto:ecitechsupport@eci.gov.in?Help Desk" target="_top">
+                    <b class="techlink animate">ECI Technical Support</b>
+                  </a>
+                </p>
+                <div>
+
+                  <div class="media small-teaser">
+                    <div class="media-left">
+                      <i class="flaticon-phone-call highlight"></i>
+                    </div>
+                    <div class="media-body">
+                      Toll free Number :1800111950
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="widget widget_popular">
+
+                <span class="logo_text logo">
+                  <span class="site-name black">
+                    <span class="highlight">Other</span> Links
+                  </span>
+                </span>
+                <ul class="media-list">
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://eci.gov.in/" target="_blank">
+                          Election Commission of India
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="#">
+                          Chief Electoral Officer
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="ds page_copyright section_padding_15 with_top_border_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center text-white">
+              <p>National Voter's Service Portal © Copyright 2019. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!--Fixed section on the layout page-->
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  <!-- jquery-ui -->
+  <script src="NATHU%20MOJI_files/jquery-ui.js" type="text/javascript"></script>
+
+  <script src="NATHU%20MOJI_files/compressed.js"></script>
+  <script src="NATHU%20MOJI_files/main.js"></script>
+
+  <!--Toaster-->
+  <link href="NATHU%20MOJI_files/jquery.css" rel="stylesheet">
+  <script src="NATHU%20MOJI_files/jquery_003.js"></script>
+  <script src="NATHU%20MOJI_files/toasterNotifications.js"></script>
+  <script src="NATHU%20MOJI_files/bootstrap.js"></script>
+  <script src="NATHU%20MOJI_files/jquery.js"></script>
+  
+  <script src="NATHU%20MOJI_files/jquery_002.js"></script>
+  <script src="NATHU%20MOJI_files/jquery_004.js"></script>
+  <script src="NATHU%20MOJI_files/jquery_005.js"></script>
+  <script src="NATHU%20MOJI_files/jquery-ui_002.js"></script>
+
+  <script src="NATHU%20MOJI_files/ui.js"></script>
+  <script>
+
+      $(document).ready(function(){
+          $('#divUpdate').hide();
+          var VFC_BLOFlagValue = 'False';
+          if(VFC_BLOFlagValue=='True')
+              $('#chkVFCBLOGFlag_BLO').prop("checked",true);
+          else
+              $('#chkVFCBLOGFlag_Citizen').prop("checked",true);
+
+      $('#btnRefresh').on("click",function(){
+          $('#epicno').val('');
+        return false;
+      });
+    });
+
+    function fetchDetailByEpic(url) {
+
+      var epic_no = $('#epicno').val();
+      if (epic_no == null || typeof epic_no == 'undefined' || epic_no == '') {
+        //epic_no = $("#ObjectorEpicNo").val();
+        showErrorToast("Epic No is not valid...!!");
+        return false;
+      }
+      url = url + '?epic_no=' + epic_no;
+      selectedRow = 0;
+      showProgress();
+      $('#btnGet').prop('disabled',true);
+      $.ajax({
+        type: "GET",
+        url: url
+      }).done(function (partialView) {
+        $('#ListPartial').empty().html(partialView).show();
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      }).fail(function (jqXhr, errorStatus, error) {
+        showErrorToast("Something went wrong, try after sometime");
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      });
+    }
+
+    function fnEditVFC_BLOFlag(){
+        debugger;
+        $('#chkVFCBLOGFlag_BLO').removeAttr('disabled');
+        $('#chkVFCBLOGFlag_Citizen').removeAttr('disabled');
+        $('#divEdit').hide();
+        $('#divUpdate').show();
+    }
+
+    function fnSetVFC_BLOFlag(url) {
+        var radioValue = $("input[name='chkVFCBLOGFlag']:checked").val();
+        var VFC_BLOFlag= false;
+        if(radioValue==="BLO"){
+            VFC_BLOFlag=true;
+        }
+        url = url + '?VFC_BLOFlag=' + VFC_BLOFlag;
+
+        $.ajax({
+            type: "GET",
+            url: url
+        }).done(function (partialView) {
+            hideProgress();
+            $('#chkVFCBLOGFlag_BLO').attr('disabled', true);
+            $('#chkVFCBLOGFlag_Citizen').attr('disabled', true);
+            $('#divEdit').show();
+            $('#divUpdate').hide();
+        }).fail(function (jqXhr, errorStatus, error) {
+            showErrorToast("Something went wrong, try after sometime");
+            hideProgress();
+        });
+    }
+  </script>
+
+
+  <script type="text/javascript">
+    $(".Datevalidate").change(function () {
+      var dateInput = $(this).val();
+      if (dateInput.length == 10) {
+        var dateReg = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{4})$/;
+        var data = dateInput.match(dateReg)
+        if (!data) {
+          showWarningToast('Please enter valid date.');
+          $(this).val('');
+        }
+      }
+      else {
+        showWarningToast('Please enter valid date.');
+        $(this).val('');
+      }
+    });
+
+    $('#btnIncFont').click(function () {
+      //
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "18px")    /*New code to fix the bug of increase font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) + 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    //$('#btnOk').click(function () {
+
+    //  $('#knowAcModal').hide();
+    //});
+
+    $('#btnDecFont').click(function () {
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "10px")  /*New code to fix the bug of decrease font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) - 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    function scrollToDiv(divId) {
+      $('html, body').animate({
+        scrollTop: $("#" + divId).offset().top - 105
+      }, 1000);
+    }
+
+    function print(divId) {
+      
+      var divToPrint = document.getElementById(divId);
+
+      var display_setting = "toolbar=yes,location=no,directories=yes,menubar=yes,";
+      display_setting += "scrollbars=yes,width=750, height=600";
+      var newWin = window.open('', 'Print-Window', display_setting);
+      newWin.document.open();
+      newWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
+
+      newWin.document.close();
+
+    }
+
+    // for pagination
+
+    function initPagination(paginationCallbackFunc, url, totalRecords) {
+      debugger;
+      var pageSize = 10;
+      if (totalRecords > pageSize) {
+        var total = Math.floor(totalRecords / pageSize);
+        if ((totalRecords % 10) > 0) {
+          total = total + 1;
+        }
+        if (total > 1) {
+          loadNextPage(paginationCallbackFunc, url);
+          $('#PaginationDiv').bootpag({
+            total: total,
+            maxVisible: 10,
+            prev: 'Prev',
+            next: 'Next',
+            leaps: true,
+            firstLastUse: true,
+            first: 'First',
+            last: 'Last'
+          });
+        }
+        $('#PaginationDiv').show();
+      }
+      else {
+
+        $('#PaginationDiv').hide();
+      }
+    }
+
+    // To load next selected form list page
+    function loadNextPage(callbackFunction, url) {
+
+      $('#PaginationDiv').unbind("page");
+      $('#PaginationDiv').on("page", function (event, pageNumber) {
+        callbackFunction(url, pageNumber);
+      });
+    }
+
+    
+  </script>
+
+<a href="#" id="toTop" style="display: inline;"><span id="toTopHover"></span>To Top</a></body></html>

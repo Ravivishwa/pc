@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://evp.ecinet.in/Verification/Index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>VerificationHome</title>
+  
+
+  <link rel="icon" href="https://evp.ecinet.in/Content/images/eci-icon.ico" type="image/x-icon">
+
+  
+  <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  <!-- Custome style -->
+  <link href="./KANCHAN_files/bootstrap.min.css" rel="stylesheet">
+  
+  <link href="./KANCHAN_files/bootstrap-flatly.min.css" rel="stylesheet">
+  <link href="./KANCHAN_files/style.css" rel="stylesheet" type="text/css">
+
+  <!-- Font Awesome -->
+  
+  <link href="./KANCHAN_files/all.min.css" rel="stylesheet">
+  
+  <link href="./KANCHAN_files/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="./KANCHAN_files/jquery-ui.min.css" rel="stylesheet">
+  <link href="./KANCHAN_files/jquery-ui.theme.min.css" rel="stylesheet">
+  <link href="./KANCHAN_files/animations.css" rel="stylesheet">
+  <link href="./KANCHAN_files/fonts.css" rel="stylesheet">
+  <link href="./KANCHAN_files/main.css" rel="stylesheet" class="color-switcher-link">
+
+  <!--[if lt IE 9]>
+    <script src="js/vendor/html5shiv.min.js"></script>
+    <script src="js/vendor/respond.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+  <![endif]-->
+  <script src="./KANCHAN_files/jquery-2.1.4.js.download"></script>
+  
+
+  
+  
+
+
+  <style>
+    /*.form-control {
+      padding: 6px 5px !important;
+    }*/
+  </style>
+</head>
+<body>
+  <input type="hidden" id="hdnLanguageArray">
+  <div id="preloader" class="preloader" style="z-index: 8000; display: none;">
+    <div class="preloader_image"></div>
+  </div>
+
+  <div id="dvLoading2" class="lds-dual-ring" style="z-index: 7000; display: none;"></div>
+  <div class="clearfix"></div>
+
+  <!--[if lt IE 9]>
+    <div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+  <![endif]-->
+  <!--Modals start-->
+  <!--knowAcModal By Sayali-->
+
+  <div id="knowAcModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="row">
+            <div class="col-md-11 text-center">
+              <h4 class="modal-title">
+                Map
+              </h4>
+            </div>
+            <div class="col-md-1 text-right">
+              <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div id="know_my_AC_partial"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- eof .modal -->
+  <div id="canvas">
+    <div id="box_wrapper">
+
+      <div class="page_header_wrapper header_white affix-wrapper" style="height: 100px;"><header class="page_header header_white toggler_right affix">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-5 col-sm-12">
+              <a href="https://evp.ecinet.in/" class="logo top_logo">
+
+                <img src="./KANCHAN_files/logo.png">
+              </a>
+            </div>
+
+            <div class="col-md-7 col-sm-12">
+
+              <!-- main nav start -->
+              <nav class="mainmenu_wrapper text-right">
+                <ul class="mainmenu sf-menu">
+                  <li class="active">
+                    <a href="https://evp.ecinet.in/">Home</a>
+                  </li>
+
+                  <li>
+                    <a href="https://evp.ecinet.in/Home/About">About Us</a>
+                  </li>
+
+                    <li class="dropdown">
+                      <a href="https://evp.ecinet.in/Verification/Index#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user-o"></i><span class="caret"></span></a>
+                      <ul class="dropdown-menu" role="menu">
+                        
+                        <li>
+                          <a href="https://evp.ecinet.in/Account/LogOut" id="login">Logout</a>
+                        </li>
+                      </ul>
+                    </li>
+
+                  <!-- contacts -->
+                  <!--<li>
+                    <a href="#">Contacts</a>
+                  </li>-->
+                  <!-- eof contacts -->
+                  <!-- <li class="search hidden-xs hidden-sm"> -->
+                  <!-- <a class="search_form_trigger header-button" href="#"> -->
+                  <!-- <span> -->
+                  <!-- <i class="flaticon-magnifying-glass bold"></i> -->
+                  <!-- <i class="fa fa-times" aria-hidden="true"></i> -->
+                  <!-- </span> -->
+                  <!-- </a> -->
+                  <!-- </li> -->
+                </ul>
+              </nav>
+              <!-- eof main nav -->
+              <!-- header toggler -->
+              <span class="toggle_menu">
+                <span></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        
+      </header></div>
+
+      <section class="ls section-content-min-height toppadding_10">
+        <div class="container">
+          <ul class="breadcrumb">
+            <li class="active"><i class="fa fa-home"></i>
+
+        <a href="https://evp.ecinet.in/" title="EVP Home">EVP Home</a>
+         &gt; 
+
+    Verify Self Details
+</li>
+          </ul>
+        </div>
+        
+  <div class="container">
+      <div class="panel topmargin_20 panel-primary">
+          <div class="panel-body">
+
+          </div>
+      </div>
+
+          <div class="panel topmargin_20 panel-primary">
+
+
+              <div class="panel-heading text-center">
+                  <div class="panel-title">
+                      Search Detail by Epic No for verification
+                  </div>
+              </div>
+              <div class="panel-body">
+                  <div class="row">
+                      <div class="col-md-12 col-xs-12">
+                          <div class="col-md-2 col-xs-12 col-md-offset-1 col-xs-offset-0">
+                              <label class="text-info">Epic No.&nbsp;</label><span class="star">*</span>
+                          </div>
+                          <div class="col-md-5 col-xs-12 col-sm-6">
+                              <input type="text" id="epicno" name="epicno" required="required" class="form-control" placeholder="enter epic no" autocomplete="off">
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3 text-right">
+                              <button class="btn btn-success btn-sm" type="button" id="btnGet" onclick="fetchDetailByEpic(&#39;/Verification/SearchVoters&#39;)"><i class="fa fa-search"></i> Search</button>
+                          </div>
+                          <div class="col-md-2 col-xs-6 col-sm-3">
+                              <button class="btn btn-danger btn-sm" type="reset" id="btnRefresh"><i class="fa fa-refresh"></i> Reset</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="ListPartial">
+
+    <div class="panel panel-info">
+      <div class="panel-heading text-center">
+        <div class="panel-title">
+          Elector Details
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>State :&nbsp;</label>Rajasthan
+            </div>
+            <div class="col-md-4">
+              <label>District :&nbsp;</label>
+            </div>
+            <div class="col-md-4">
+              <label>PC :&nbsp;</label>
+            </div>
+          </div>
+          <div class="col-md-12 form-group">
+            <div class="col-md-3">
+              <label>AC :&nbsp;</label>103 - Beawar
+            </div>
+            <div class="col-md-9">
+              <label>Part :&nbsp;</label>277 - Tat Garh 
+            </div>
+          </div>
+          <div class="col-md-12 col-sm-12" id="verifyDetailsFormDiv">
+            <div id="formDetails" class="col-md-9 col-sm-9">
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label class="">Name <span class="text-right">:</span></label>
+                    </td>
+                    <td><span>KANCHAN&nbsp; / कंचन </span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Relative Name<span class="text-right">:</span> </label>
+                    </td>
+                    <td><span>SURENDRA PAL SINGH&nbsp; / सुरेन्द्र पाल सिंह </span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Relation Type<span class="text-right">:</span></label>
+                    </td>
+                    
+                    <td><span>Husband</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Date of Birth<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Age<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>31</span></td>
+                  </tr>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Gender<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>Female</span></td>
+                  </tr>
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>PwD<span class="text-right">:</span></label>
+                    </td>
+                    <td><span>NA</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-3 col-sm-3 text-center toppadding_20">
+              <div class="form-group">
+                <img id="elector_image_v" alt="Image not available" src="data:image/jpg;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" width="100" height="120" class="img-thumbnail image">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-3">
+              <label>House no. : &nbsp;</label>161
+            </div>
+
+            <div class="col-md-9">
+              <label>Address : &nbsp; </label>KHUNTA KI BADI / खूंटा की बडी
+            </div>
+
+            <div class="">
+
+              <table class="table table-condensed table-hover table-striped bottommargin_10">
+                <tbody>
+
+                  <tr>
+                    <td align="left" class="headingCell">
+                      <label>Mobile no.<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+
+                    <td align="left" class="headingCell">
+                      <label>Email Id<span class="text-right">:</span></label>
+                    </td>
+                    <td><span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="radio_v_div">
+          <div class="col-md-12 form-group">
+
+            <div class="col-md-4">
+              <input id="EvpRequestOption" name="EvpRequestOption" type="hidden" value="">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="V" id="detail_verify" class="detail_verify" name="verify-radio" disabled="">&nbsp;
+                Is information displayed above is correct.
+              </label>
+            </div>
+            <div class="col-md-4">
+              <label class="font-weight-400 text-black">
+                <input type="radio" value="C" id="detail_correction" class="detail_correction" name="verify-radio" disabled="">&nbsp; Information displayed above needs correction.
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="col-md-12">
+              <h6>
+                Verification and Authentication of this record is already completed.
+              </h6>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <div id="PrintModal" class="modal fade">
+      <div class="modal-dialog modal-lg" style="width:85%">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="row">
+              <div class="col-md-11 text-center">
+                <h4 class="modal-title">
+                  Print Form
+                </h4>
+              </div>
+              <div class="col-md-1 text-right">
+                <button type="button" class="btn btn-danger btn-sm" data-dismiss="modal" aria-hidden="true">×</button>
+              </div>
+            </div>
+          </div>
+          <div id="PrintPartial" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $("input[name='verify-radio']").val(['V']).prop('disabled', true);
+        $('label[class~="radio-inline"]').removeClass('radio-inline').addClass('font-weight-400 text-black');
+      });
+
+      function fnFetchForm8Preview(url, stateCode, refNo) {
+        if (url == null || stateCode == null || refNo == null || url == '' || stateCode == '' || refNo == '') {
+          showErrorToast("Unable to show print preview");
+          return false;
+        }
+        showProgress();
+        url = url + "?stateCode=" + stateCode + "&refNo=" + refNo;
+        $.ajax({
+          type: "GET",
+          url: url
+        }).done(function (partialView) {
+          hideProgress();
+          $('#PrintPartial').html(partialView);
+          $('#PrintModal').modal('show');
+        }).fail(function (jqXhr, status, error) {
+          hideProgress();
+          showErrorToast("Error while showing form details..");
+        });
+
+      }
+
+
+    </script>
+</div>
+          <input type="hidden" id="verificationType" value="V">
+      </div>
+
+      </section>
+
+      <footer class="page_footer ds columns_padding_25">
+        <div class="container-fluid toppadding_20">
+          <div class="row">
+            <div class="col-md-7 col-sm-12">
+              <div class="widget widget_text bottommargin_10">
+                <a href="https://evp.ecinet.in/Home/Index" class="logo top_logo small_logo 0">
+
+                  <span class="logo_text">
+                    <span class="site-name black">
+                      <span class="highlight">Contact</span> Us
+                    </span>
+                  </span>
+                </a>
+                <p class="bottommargin_0">
+                  For details of eligibility criteria or any other additional information related to electoral forms,
+                  kindly visit <a href="https://eci.gov.in/"><b class="link animate">https://eci.gov.in</b></a>
+                </p>
+                <p class="bottommargin_0">
+                  For any other technical feedback or issues on the portal kindly send your feedback to
+                  
+                  <a href="mailto:ecitechsupport@eci.gov.in?Help%20Desk" target="_top">
+                    <b class="techlink animate">ECI Technical Support</b>
+                  </a>
+                </p>
+                <div>
+
+                  <div class="media small-teaser">
+                    <div class="media-left">
+                      <i class="flaticon-phone-call highlight"></i>
+                    </div>
+                    <div class="media-body">
+                      Toll free Number :1800111950
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-6">
+              <div class="widget widget_popular">
+
+                <span class="logo_text logo">
+                  <span class="site-name black">
+                    <span class="highlight">Other</span> Links
+                  </span>
+                </span>
+                <ul class="media-list">
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://eci.gov.in/" target="_blank">
+                          Election Commission of India
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                  <li class="media">
+                    
+                    <div class="media-body">
+                      <h4>
+                        <a href="https://evp.ecinet.in/Verification/Index#">
+                          Chief Electoral Officer
+                        </a>
+                      </h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <section class="ds page_copyright section_padding_15 with_top_border_container">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center text-white">
+              <p>National Voter's Service Portal © Copyright 2019. All Rights Reserved.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- eof #box_wrapper -->
+  </div>
+  <!--Fixed section on the layout page-->
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  <!-- jquery-ui -->
+  <script src="./KANCHAN_files/jquery-ui.min.js.download" type="text/javascript"></script>
+
+  <script src="./KANCHAN_files/compressed.js.download"></script>
+  <script src="./KANCHAN_files/main.js.download"></script>
+
+  <!--Toaster-->
+  <link href="./KANCHAN_files/jquery.toast.min.css" rel="stylesheet">
+  <script src="./KANCHAN_files/jquery.toast.min.js.download"></script>
+  <script src="./KANCHAN_files/toasterNotifications.js.download"></script>
+  <script src="./KANCHAN_files/bootstrap.min.js.download"></script>
+  <script src="./KANCHAN_files/jquery.bootpag.min.js.download"></script>
+  
+  <script src="./KANCHAN_files/jquery.validate.min.js.download"></script>
+  <script src="./KANCHAN_files/jquery.validate.unobtrusive.min.js.download"></script>
+  <script src="./KANCHAN_files/jquery.unobtrusive-ajax.min.js.download"></script>
+  <script src="./KANCHAN_files/jquery-ui.min.js(1).download"></script>
+
+  <script src="./KANCHAN_files/ui.js.download"></script>
+  <script>
+
+      $(document).ready(function(){
+          $('#divUpdate').hide();
+          var VFC_BLOFlagValue = 'False';
+          if(VFC_BLOFlagValue=='True')
+              $('#chkVFCBLOGFlag_BLO').prop("checked",true);
+          else
+              $('#chkVFCBLOGFlag_Citizen').prop("checked",true);
+
+      $('#btnRefresh').on("click",function(){
+          $('#epicno').val('');
+        return false;
+      });
+    });
+
+    function fetchDetailByEpic(url) {
+
+      var epic_no = $('#epicno').val();
+      if (epic_no == null || typeof epic_no == 'undefined' || epic_no == '') {
+        //epic_no = $("#ObjectorEpicNo").val();
+        showErrorToast("Epic No is not valid...!!");
+        return false;
+      }
+      url = url + '?epic_no=' + epic_no;
+      selectedRow = 0;
+      showProgress();
+      $('#btnGet').prop('disabled',true);
+      $.ajax({
+        type: "GET",
+        url: url
+      }).done(function (partialView) {
+        $('#ListPartial').empty().html(partialView).show();
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      }).fail(function (jqXhr, errorStatus, error) {
+        showErrorToast("Something went wrong, try after sometime");
+        hideProgress();
+        $('#btnGet').prop('disabled',false);
+      });
+    }
+
+    function fnEditVFC_BLOFlag(){
+        debugger;
+        $('#chkVFCBLOGFlag_BLO').removeAttr('disabled');
+        $('#chkVFCBLOGFlag_Citizen').removeAttr('disabled');
+        $('#divEdit').hide();
+        $('#divUpdate').show();
+    }
+
+    function fnSetVFC_BLOFlag(url) {
+        var radioValue = $("input[name='chkVFCBLOGFlag']:checked").val();
+        var VFC_BLOFlag= false;
+        if(radioValue==="BLO"){
+            VFC_BLOFlag=true;
+        }
+        url = url + '?VFC_BLOFlag=' + VFC_BLOFlag;
+
+        $.ajax({
+            type: "GET",
+            url: url
+        }).done(function (partialView) {
+            hideProgress();
+            $('#chkVFCBLOGFlag_BLO').attr('disabled', true);
+            $('#chkVFCBLOGFlag_Citizen').attr('disabled', true);
+            $('#divEdit').show();
+            $('#divUpdate').hide();
+        }).fail(function (jqXhr, errorStatus, error) {
+            showErrorToast("Something went wrong, try after sometime");
+            hideProgress();
+        });
+    }
+  </script>
+
+
+  <script type="text/javascript">
+    $(".Datevalidate").change(function () {
+      var dateInput = $(this).val();
+      if (dateInput.length == 10) {
+        var dateReg = /^(?:(?:31(\/|-|\.)(?:0?[13578]|1[02]))\1|(?:(?:29|30)(\/|-|\.)(?:0?[1,3-9]|1[0-2])\2))(?:(?:1[6-9]|[2-9]\d)?\d{2})$|^(?:29(\/|-|\.)0?2\3(?:(?:(?:1[6-9]|[2-9]\d)?(?:0[48]|[2468][048]|[13579][26])|(?:(?:16|[2468][048]|[3579][26])00))))$|^(?:0?[1-9]|1\d|2[0-8])(\/|-|\.)(?:(?:0?[1-9])|(?:1[0-2]))\4(?:(?:1[6-9]|[2-9]\d)?\d{4})$/;
+        var data = dateInput.match(dateReg)
+        if (!data) {
+          showWarningToast('Please enter valid date.');
+          $(this).val('');
+        }
+      }
+      else {
+        showWarningToast('Please enter valid date.');
+        $(this).val('');
+      }
+    });
+
+    $('#btnIncFont').click(function () {
+      //
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "18px")    /*New code to fix the bug of increase font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) + 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    //$('#btnOk').click(function () {
+
+    //  $('#knowAcModal').hide();
+    //});
+
+    $('#btnDecFont').click(function () {
+      var selectedFont = $('body').css('font-size');
+      if (selectedFont != "10px")  /*New code to fix the bug of decrease font size Reena Rana 29 Aug 2018*/
+        $('body').css('font-size', (parseInt(selectedFont) - 1));
+      else {
+        console.log("inseide else" + selectedFont);
+      }
+    });
+
+    function scrollToDiv(divId) {
+      $('html, body').animate({
+        scrollTop: $("#" + divId).offset().top - 105
+      }, 1000);
+    }
+
+    function print(divId) {
+      
+      var divToPrint = document.getElementById(divId);
+
+      var display_setting = "toolbar=yes,location=no,directories=yes,menubar=yes,";
+      display_setting += "scrollbars=yes,width=750, height=600";
+      var newWin = window.open('', 'Print-Window', display_setting);
+      newWin.document.open();
+      newWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
+
+      newWin.document.close();
+
+    }
+
+    // for pagination
+
+    function initPagination(paginationCallbackFunc, url, totalRecords) {
+      debugger;
+      var pageSize = 10;
+      if (totalRecords > pageSize) {
+        var total = Math.floor(totalRecords / pageSize);
+        if ((totalRecords % 10) > 0) {
+          total = total + 1;
+        }
+        if (total > 1) {
+          loadNextPage(paginationCallbackFunc, url);
+          $('#PaginationDiv').bootpag({
+            total: total,
+            maxVisible: 10,
+            prev: 'Prev',
+            next: 'Next',
+            leaps: true,
+            firstLastUse: true,
+            first: 'First',
+            last: 'Last'
+          });
+        }
+        $('#PaginationDiv').show();
+      }
+      else {
+
+        $('#PaginationDiv').hide();
+      }
+    }
+
+    // To load next selected form list page
+    function loadNextPage(callbackFunction, url) {
+
+      $('#PaginationDiv').unbind("page");
+      $('#PaginationDiv').on("page", function (event, pageNumber) {
+        callbackFunction(url, pageNumber);
+      });
+    }
+
+    
+  </script>
+
+<a href="https://evp.ecinet.in/Verification/Index#" id="toTop" style="display: block;"><span id="toTopHover"></span>To Top</a></body></html>

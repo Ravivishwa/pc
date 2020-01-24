@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="myApp" class="no-js">
+<head>
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="National Electoral Search :: Election Commission of India has launched a major initiative of Electoral Roll Search at National level. This service can be used by voters to search their names and get the information related to polling stations in the nation-wide electoral rolls." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+    <title>ECI : Voter Information</title>
+    <link rel="icon" href="/eci-icon.ico" />
+    <!-- Include CSS Style sheet-->
+    <link href="/scripts/jquery/ui/1.11.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/pagination.css" type="text/css">
+    <link rel="stylesheet" href="/css/sticky_header.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="/css/groundwork.css">
+    <link type="text/css" rel="stylesheet" href="/css/index.css">
+    <script type="text/javascript"  src="/js/libs/modernizr-2.6.2.min.js"></script>
+    <script type="text/javascript"src="/scripts/jquery.min.js" ></script>
+    <script type="text/javascript" src="/scripts/jquery/jquery-2.1.4.js"></script>
+    <script type="text/javascript" src="/scripts/jquery/ui/1.11.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.twbsPagination.min.js"></script>
+    <script type="text/javascript" src="/scripts/util.js"></script>
+    <script type="text/javascript" src="/scripts/angular.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=places&region=IN&key=AIzaSyA4mlo-kY0vyBDIdeXffR2igqE5igx3piE"></script>
+    <script type="text/javascript" src="/scripts/search-eci.js"></script>
+    <script type="text/javascript" src="/js/groundwork.all.js"></script>
+    <script type="text/javascript" src="/scripts/index-page/welcome-dialog-box.js"></script>
+    <script type="text/javascript" src="/scripts/index-page/index.js"></script>
+
+    
+    <script type="text/javascript" src="/scripts/inscript-keyboard/KeyboardScript.min.js"></script>
+
+
+    
+    <script>
+                    isCaptchaReloading = false;
+                    function reloadCaptchaImage(btnId, imgId) {
+                    $(btnId).click(function () {
+                    if (isCaptchaReloading === false || isCaptchaReloading == "undefined") {
+                    isCaptchaReloading = true;
+                            setTimeout(function () {
+                                $(imgId).attr("src", "/Home/GetCaptcha?image=true&id=" + new Date());
+                                    isCaptchaReloading = false;
+                            }, 1000);
+                    } else {
+                    custom_alert("Please wait, we are processing your previous request", "Relaoding Captcha", true);
+                    }
+                    });
+                    }
+
+
+
+
+        //Added
+
+              var snd;
+
+                    function PlayFile(btnId) {
+                        //debugger;
+                        $(btnId).click(function () {
+                            $.ajax({
+                                url: '/Home/PlayFile',
+                                success: function (data1) {
+                                    if (snd != undefined)
+                                    {
+                                        snd.pause();
+                                        snd.currentTime = 0;
+                                    }
+
+                                    snd = new Audio("data:audio/wav;base64," + data1);
+
+                                        snd.play();
+
+                                }
+
+                            });
+                        });
+                    }
+
+
+                    // Play the loaded file
+                    function play() {
+                        // Create a source node from the buffer
+                        var source = context.createBufferSource();
+                        source.buffer = buf;
+                        // Connect to the final output node (the speakers)
+                        source.connect(context.destination);
+                        // Play immediately
+                        source.start(0);
+                    }
+
+
+
+
+
+
+
+
+
+
+            function custom_alert(output_msg, title_msg, autoclose)
+            {
+            if (!title_msg)
+                    title_msg = 'Alert';
+                    if (!output_msg)
+                    output_msg = 'No Message to Display.';
+                    $("<div></div>").html(output_msg).dialog({
+            title: title_msg,
+                    resizable: true,
+                    modal: true,
+                    open: function (event, ui) {
+                    if (autoclose === true) {
+                    var dlg = $(this);
+                            setTimeout(function () {
+                            dlg.dialog("close");
+                            }, 1700);
+                    }
+                    }
+            /*Uncomment if you want ok button in dialog*/
+//                    ,
+//                    buttons: {
+//                        "Ok": function ()
+//                        {
+//                            $(this).dialog("close");
+//                        }
+//                    }
+            });
+            }
+
+            //$(window).scroll(function () {
+            //if ($('#resultsDiv').css('display') !== 'none') {
+            //var sticky = $('.sticky-row');
+            //        var scroll = $(window).scrollTop();
+            //        var resultDivHeight = $('#resultsDiv').offset().top;
+            //        if (scroll >= resultDivHeight - 100) {
+            //if (sticky.hasClass() === false)
+            //        sticky.addClass('fixed-row');
+            //}
+            //else {
+            //sticky.removeClass('fixed-row');
+            //}
+            //}
+            //});
+                    $(document).ready(function () {
+
+            /*
+             *  Function to display Display or Aadhaar Dialog box
+             */
+            displayWelcomeOrAadhaarDialogBox();
+                    reloadCaptchaImage('#reloadCaptchaDetailBtn', '#captchaDetailImg');
+                    reloadCaptchaImage('#reloadCaptchaEpicBtn', '#captchaEpicImg');
+
+                        //Changes made for requesting captcha after every 5 requests from pager 23-12-2019
+                    reloadCaptchaImage('#reloadCaptchadailogBtn', '#captchaDailogImg');
+
+                        //Added
+                      PlayFile('#audioimg');
+                      PlayFile('#Epicaudioimg');
+
+                     // Changes made for requesting captcha after every 5 requests from pager 23-12-2019
+                      PlayFile('#audiodailogimg');
+
+
+                    /*
+                     * Select Location on MAP
+                     */
+                    $("#" + "dialog" + ":ui-dialog").dialog("destroy");
+                    $("#" + "dialog").dialog({
+            autoOpen: false,
+                    modal: true,
+                    width: "60%",
+                    buttons: {
+                    Ok: function () {
+                    $(this).dialog("close");
+                            if (document.getElementById("dialog_box_location") !== null) {
+                    document.getElementById("dialog_box_location").innerHTML = "<b style=\"font-size: 20px; color: navy\">Set your location on Map</b>";
+                    }
+                    if (document.getElementById("mapSearchBox") !== null) {
+                    document.getElementById("mapSearchBox").innerHTML = "<input id=\"pac-input\" class=\"controls\" type=\"text\" placeholder=\"Enter a location\" />";
+                    }
+                    }
+                    }
+                    });
+
+
+
+                      
+
+                    /*
+                     * Dislpay PS Location on MAP
+                     */
+                    $("#dialogViewMap" + ":ui-dialog").dialog("destroy");
+                    $("#dialogViewMap").dialog({
+            autoOpen: false,
+                    modal: true,
+                    width: "60%",
+                    buttons: {
+                    Ok: function () {
+                    //document.getElementById("mapView").style.display = "none";
+                    $(this).dialog("close");
+                    }
+                    }
+                    });
+
+
+
+
+                   
+
+
+
+
+
+
+                    /*
+                     *  Display 'Please Click on PS location for more info' on table row hover
+                     */
+                    $('#resultsDiv').hover(function () {
+					//Commented
+           // $('#ps_msg_div').css({display: "block"});
+            }, function () {
+            $('#ps_msg_div').css({display: "none"});
+            });
+                    /*
+                     * Hit counter
+                     */
+                    //_hits();
+                    /*
+                     * Floating Keyword
+                     */
+                    floatingKeyboardScript();
+            });
+                    function _aquire() {
+                    return 'ca3ac2c8-4676-48eb-9129-4cdce3adf6ea';
+                    }
+    </script>
+    
+</head>
+<body ng-controller="FormCtrl">
+    <header class="padded">
+        <div class="container" style="margin-top: 3px;">
+            <div class="row ">
+                <div class="one tenth"></div>
+                <div id="banner" class="eight tenth desktop-only" style="background-position: center center; min-height:70px; max-height: 70px; background-image: url('/images/logo_temp.png'); background-repeat: no-repeat;">
+                </div>
+                <div id="banner" class="eight tenth hide-on-desktop small-ipad small-mobile small-tablet pad-right no-pad-mobile" style="background-position: center center; min-height:80px;max-height: 82px; background-image: url('/images/nav-480.png'); background-repeat: no-repeat;">
+                    <div style="background-position: center center; min-height:80px;max-height: 82px; background-image: url('/images/logoMINI.png'); background-repeat: no-repeat;">
+                    </div>
+                </div>
+                <!--                    <div class="one tenth"></div>-->
+            </div>
+        </div>
+    </header>
+    <div class="row" id="menu_css">
+        <div class="seven tenth">
+        </div>
+        <div class="three tenth">
+            <ul>
+                <li><a href="http://nvsp.in/home" target="_blank">होम<br>Home</a></li>
+                <li><a href="http://nvsp.in/home/about" target="_blank">हमारे बारे में<br>About Us</a></li>
+                <li><a href="http://nvsp.in/home" target="_blank">संपर्क<br>Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="bg">
+        </div>
+    </div>
+
+    <html>
+<head></head>
+<body>
+<div class="list-header clearfix">
+    <H2>Error</H2>
+</div>
+<div class="container">
+    <div>
+        An unexpected error has occurred. Please contact the system administrator.
+    </div>
+</div>
+</body>
+</html>
+
+    <footer class="footer">
+        <br>
+        
+        <div align='center' class="museo-slab">
+            <h5>
+               
+            <span style="color: #000; font-size: 15px;">Powered by ECI - Delhi </span>
+            
+            <span style="color: #000; font-size: 15px;"> Copyright © 2019  </span>
+
+            </h5>
+        </div>
+    </footer>
+
+    <div id="welcomeDialog" style="display: none;margin-top: 0px;">
+        <div class="main" style="background-color: white;color: black;">
+            <div style="padding:15px 15px 15px;border: 4px solid rgb(42, 127, 200);color: white;">
+                <strong><h2 style="color: rgb(234, 99, 99); margin-bottom: 0px;">राष्ट्रीय मतदाता सेवा पोर्टल में आपका स्‍वागत है</h2><h2 style="color: rgb(234, 99, 99);">Welcome to National Voters' Services Portal </h2></strong>
+                <h3 style="color: black;margin-bottom: 0px;">इस वेबसाइट का प्रयोग कर आप:</h3>
+                <ul style="font-weight: bolder;color: black">
+                    <li>आधारभूत ब्‍यौरों को प्रविष्‍ट करके आप राष्ट्रीय निर्वाचक नामावली में अपना नाम ढूंढ सकते हैं।</li>
+                    <li>मानचित्र पर मतदान केन्‍द्र की अवस्थिति जान सकते हैं</li>
+                    <li>मतदाता जानकारी पर्ची प्रिंट कर सकते हैं।</li>
+                    <li>निर्वाचक नामावली में पंजीयन, संशोधन, विलोपन और पते के परिवर्तन के लिए आवेदन कर सकते हैं।</li>
+                    <li>बूथ लेवल अधिकारी (बी एल ओ) निर्वाचक रजिस्‍ट्रीकरण अधिकारी (ईआरओ) को जान सकते हैं।</li>
+                    <li>जिला निर्वाचन पदधारियों तथा मुख्‍य निर्वाचन अधिकारी के कार्यालय के पदधारियों को जान सकते हैं। </li>
+                </ul>
+                <h3 style="color: black;margin-bottom: 0px;">Using this web-site you can:</h3>
+                <ul style="font-weight: bolder;color: black">
+                    <li>Search your name in National Electoral Roll  by entering basic details.</li>
+                    <li>Locate polling station on map.</li>
+                    <li>Print voter information slip.</li>
+                    <li>Apply for Enrolment, Modification, Deletion and change of address in  electoral roll</li>
+                    <li>Know Booth Level Officer(BLO), Electoral Roll Officer(ERO)</li>
+                    <li>Know District Election Officials and officials in Chief Election Office </li>
+                </ul>
+                <div style="text-align: right">
+                    <!--                            <input style="background-color: #ED5757; color: white;max-width: 13.2em;white-space: normal;" type="button" id="continue" value="स्‍क‍िप करें और जारी रखें Skip and Continue" class="">-->
+                    <input style="background-color: #ED5757; color: white;max-width: 9.6em;white-space: normal; padding-left: 2.2em; padding-right: 2.2em;" type="button" id="continue" value="जारी रखें Continue" class="">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div style="display: none;width: 100%;" id="loading">
+        <center>Loading...</center>
+    </div>
+</body>
+</html>
